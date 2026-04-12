@@ -92,8 +92,21 @@ p{text-wrap:pretty;max-width:72ch}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:860px){
-  .nav{position:fixed;inset:var(--nav-h) 0 auto 0;background:rgba(15,23,42,.98);flex-direction:column;padding:1.5rem;gap:1rem;transform:translateY(-110%);transition:transform .3s ease;pointer-events:none}
-  .nav.open{transform:translateY(0);pointer-events:auto}
+.nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background:#0f172a;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:1.5rem;
+  transform:translateY(-100%);
+  transition:transform .3s ease;
+  z-index:100;
+}  .nav.open{transform:translateY(0);pointer-events:auto}
   .hamburger{display:flex}
 }
 
