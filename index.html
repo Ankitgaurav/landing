@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>COSMODENTZ Dental Clinic – Motihari, Bihar</title>
+<meta name="description" content="COSMODENTZ Dental Clinic Motihari – painless RCT, implants, braces, smile designing, child dental care & PRP treatments by Dr. Pradeep. Google 4.9★ (119 reviews)."/>
+<meta name="keywords" content="cosmodentz dental clinic motihari, dentist motihari, dr pradeep motihari, root canal motihari, implants motihari, braces motihari"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"COSMODENTZ Dental Clinic","telephone":"+91-9473013806","address":{"@type":"PostalAddress","streetAddress":"NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony","addressLocality":"Motihari","addressRegion":"Bihar","postalCode":"845401","addressCountry":"IN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"119"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@0,600;1,600&display=swap" rel="stylesheet"/>
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:"Plus Jakarta Sans",sans-serif;font-size:1rem;line-height:1.65;color:#1e293b;background:#f8fafc}
+img,svg{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;font:inherit}
+h1,h2,h3,h4{line-height:1.2;text-wrap:balance}
+p{text-wrap:pretty;max-width:72ch}
+
+/* ===== TOKENS ===== */
+:root{
+  --blue:#0ea5e9;
+  --teal:#0d9488;
+  --blue-dark:#0284c7;
+  --teal-dark:#0f766e;
+  --green:#22c55e;
+  --surface:#ffffff;
+  --surface2:#f1f5f9;
+  --surface3:#e2e8f0;
+  --text:#1e293b;
+  --text-m:#64748b;
+  --text-s:#94a3b8;
+  --grad:linear-gradient(135deg,#0ea5e9,#0d9488);
+  --radius:1rem;
+  --shadow:0 4px 24px rgba(15,23,42,.08);
+  --shadow-lg:0 12px 40px rgba(15,23,42,.13);
+  --nav-h:68px;
+}
+
+/* ===== LAYOUT ===== */
+.wrap{width:min(1140px,100% - 2.5rem);margin-inline:auto}
+.section{padding:4.5rem 0}
+.section--alt{background:#ffffff}
+.section--dark{background:linear-gradient(135deg,#0f172a 0%,#0c1a2e 100%);color:#e2e8f0}
+.sec-label{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:.5rem}
+.sec-title{font-family:"Lora",serif;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:.75rem;color:var(--text)}
+.sec-title--light{color:#f1f5f9}
+.sec-desc{color:var(--text-m);margin-bottom:2rem;max-width:580px}
+.two-col{display:grid;gap:2.5rem}
+@media(min-width:768px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
+@media(min-width:900px){.two-col--60{grid-template-columns:3fr 2fr}}
+
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem 1.4rem;border-radius:999px;font-weight:600;font-size:.9rem;border:2px solid transparent;transition:all .18s ease;white-space:nowrap}
+.btn--primary{background:var(--grad);color:#fff;box-shadow:0 6px 20px rgba(14,165,233,.35)}
+.btn--primary:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(14,165,233,.4)}
+.btn--outline{border-color:var(--blue);color:var(--blue);background:transparent}
+.btn--outline:hover{background:var(--blue);color:#fff}
+.btn--white{background:#fff;color:var(--blue-dark);border-color:#fff}
+.btn--white:hover{background:#e0f2fe;border-color:#e0f2fe}
+.btn--ghost{background:rgba(255,255,255,.1);color:#e2e8f0;border-color:rgba(255,255,255,.3)}
+.btn--ghost:hover{background:rgba(255,255,255,.2)}
+.btn--block{width:100%;justify-content:center;padding:.75rem 1.4rem;font-size:1rem}
+
+/* ===== FLOATING BUTTONS ===== */
+.fab-wrap{position:fixed;bottom:1.25rem;right:1.25rem;z-index:100;display:flex;flex-direction:column;gap:.6rem}
+.fab{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);border:none;transition:transform .15s}
+.fab:hover{transform:scale(1.1)}
+.fab--wa{background:#22c55e}
+.fab--call{background:var(--blue)}
+.fab--book{background:#6366f1}
+
+/* ===== HEADER / NAV ===== */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#e2e8f0;height:var(--nav-h)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;height:100%;gap:1rem}
+.brand{display:flex;align-items:center;gap:.55rem}
+.brand-logo{flex-shrink:0}
+.brand-name{font-weight:800;font-size:1rem;line-height:1.1}
+.brand-tagline{font-size:.65rem;opacity:.7;font-weight:400}
+.nav{display:flex;align-items:center;gap:1.5rem;font-size:.85rem}
+.nav a{opacity:.8;transition:opacity .15s;font-weight:500}
+.nav a:hover{opacity:1}
+.nav-cta{background:var(--grad);color:#fff!important;opacity:1!important;padding:.4rem 1.1rem;border-radius:999px;font-weight:700}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:.3rem}
+.hamburger span{display:block;width:22px;height:2px;background:#e2e8f0;border-radius:2px;transition:all .25s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:860px){
+  .nav{position:fixed;inset:var(--nav-h) 0 auto 0;background:rgba(15,23,42,.98);flex-direction:column;padding:1.5rem;gap:1rem;transform:translateY(-110%);transition:transform .3s ease;pointer-events:none}
+  .nav.open{transform:translateY(0);pointer-events:auto}
+  .hamburger{display:flex}
+}
+
+/* ===== HERO ===== */
+.hero{background:radial-gradient(ellipse at 30% 0%,#0c4a6e 0%,#0f172a 55%,#042f2e 100%);color:#e2e8f0;padding:5rem 0 4rem}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:3fr 2.5fr}}
+.hero-kicker{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7dd3fc;margin-bottom:.75rem}
+.hero h1{font-family:"Lora",serif;font-size:clamp(2rem,4.5vw,3rem);line-height:1.15;margin-bottom:1rem}
+.hero h1 em{font-style:italic;color:#5eead4}
+.hero-body{color:#cbd5e1;margin-bottom:1.75rem;font-size:1.05rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1.25rem}
+.trust-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem}
+.trust-pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:.25rem .75rem;font-size:.78rem;font-weight:600}
+.hero-ext{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem}
+.hero-ext a{color:#7dd3fc;opacity:.9}
+.hero-ext a:hover{opacity:1;text-decoration:underline}
+
+/* Hero right cards */
+.hero-right{display:grid;gap:1rem}
+.hcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:1.25rem 1.35rem}
+.hcard h3{font-size:1rem;font-weight:700;margin-bottom:.6rem;color:#f0f9ff}
+.hcard ul{display:grid;gap:.35rem}
+.hcard ul li::before{content:"→ ";color:#5eead4}
+.hcard ul li{font-size:.88rem;color:#cbd5e1}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.stat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:.75rem;text-align:center}
+.stat-val{display:block;font-size:1.4rem;font-weight:800;color:#38bdf8}
+.stat-lbl{font-size:.7rem;color:#94a3b8;display:block;margin-top:.15rem}
+.hours-bar{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:.7rem 1rem;display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:#cbd5e1}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;box-shadow:0 0 8px #22c55e}
+
+/* ===== ABOUT ===== */
+.about-text p{color:var(--text-m);margin-bottom:.85rem}
+.badge-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.badge{background:#e0f2fe;color:#075985;border-radius:999px;padding:.25rem .75rem;font-size:.78rem;font-weight:600}
+.highlight-list{display:grid;gap:1.1rem}
+.hl-item{display:flex;gap:.9rem;align-items:flex-start}
+.hl-icon{font-size:1.4rem;flex-shrink:0;margin-top:.1rem}
+.hl-item h4{font-size:.95rem;font-weight:700;margin-bottom:.2rem}
+.hl-item p{font-size:.88rem;color:var(--text-m)}
+
+/* ===== SERVICES ===== */
+.services-grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin-top:2rem}
+.svc-card{background:#fff;border:1px solid var(--surface3);border-radius:var(--radius);padding:1.25rem 1.35rem;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
+.svc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.svc-icon{font-size:1.6rem;margin-bottom:.5rem}
+.svc-card h3{font-size:.95rem;font-weight:700;margin-bottom:.35rem}
+.svc-card p{font-size:.85rem;color:var(--text-m)}
+
+/* ===== PRICING ===== */
+.ptable-wrap{overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow);margin-top:1.5rem}
+.ptable{width:100%;border-collapse:collapse;background:#fff;font-size:.9rem}
+.ptable thead tr{background:var(--grad);color:#fff}
+.ptable th{padding:.85rem 1.1rem;text-align:left;font-weight:700;font-size:.82rem;white-space:nowrap}
+.ptable td{padding:.75rem 1.1rem;border-bottom:1px solid #f1f5f9;vertical-align:top}
+.ptable tbody tr:hover{background:#f8fafc}
+.ptable tbody tr:last-child td{border-bottom:none}
+.price{font-weight:700;color:var(--teal);white-space:nowrap}
+.ptable td:last-child{color:var(--text-m);font-size:.82rem}
+.price-note{margin-top:1rem;font-size:.82rem;color:var(--text-s);font-style:italic}
+
+/* ===== DOCTOR ===== */
+.doctor-grid{display:grid;gap:2.5rem;align-items:start}
+@media(min-width:768px){.doctor-grid{grid-template-columns:auto 1fr}}
+.doc-card{background:var(--grad);border-radius:var(--radius);padding:2rem 1.5rem;text-align:center;color:#fff;min-width:200px}
+.doc-avatar{width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;font-size:2.5rem}
+.doc-card h3{font-family:"Lora",serif;font-size:1.2rem;margin-bottom:.2rem}
+.doc-card p{font-size:.82rem;opacity:.85}
+.doc-info p{color:var(--text-m);margin-bottom:.75rem}
+.doc-quals{display:grid;gap:.5rem;margin:1rem 0 1.25rem}
+.doc-quals li{font-size:.88rem;color:var(--text-m);padding-left:1.1rem;position:relative}
+.doc-quals li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+
+/* ===== REVIEWS ===== */
+.reviews-grid{display:grid;gap:1.25rem;margin-top:1.5rem}
+@media(min-width:768px){.reviews-grid{grid-template-columns:repeat(3,1fr)}}
+.review-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:1.3rem 1.4rem}
+.stars{color:#fbbf24;font-size:1rem;margin-bottom:.6rem}
+.review-text{font-size:.88rem;color:#cbd5e1;font-style:italic;margin-bottom:.75rem}
+.reviewer{font-size:.8rem;font-weight:600;color:#94a3b8}
+.reviews-btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+
+/* ===== FAQ ===== */
+.faq-wrap{max-width:720px;margin:1.5rem auto 0}
+.faq-item{background:#fff;border:1px solid var(--surface3);border-radius:.75rem;margin-bottom:.6rem;overflow:hidden;box-shadow:var(--shadow)}
+.faq-item summary{padding:1rem 1.25rem;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:.5rem}
+.faq-item summary::after{content:"＋";font-size:1.1rem;color:var(--blue);flex-shrink:0;transition:transform .2s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-body{padding:0 1.25rem 1rem;font-size:.9rem;color:var(--text-m)}
+.faq-body a{color:var(--blue)}
+
+/* ===== APPOINTMENT ===== */
+.appt-grid{display:grid;gap:2rem}
+@media(min-width:768px){.appt-grid{grid-template-columns:3fr 2fr;align-items:start}}
+.appt-form{background:#fff;border-radius:var(--radius);padding:1.75rem;box-shadow:var(--shadow-lg);border:1px solid var(--surface3)}
+.field{margin-bottom:1rem}
+.field label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem;color:var(--text)}
+.field input,.field select,.field textarea{width:100%;padding:.55rem .75rem;border:1.5px solid var(--surface3);border-radius:.5rem;font:inherit;font-size:.9rem;color:var(--text);transition:border-color .15s;background:#fafafa}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);background:#fff}
+.field-err{font-size:.78rem;color:#e11d48;display:block;margin-top:.2rem;min-height:1em}
+.form-note{font-size:.78rem;color:var(--text-s);margin-top:.5rem;text-align:center}
+.contact-box{background:#fff;border-radius:var(--radius);padding:1.5rem;border:1px solid var(--surface3);box-shadow:var(--shadow)}
+.contact-box h3{font-family:"Lora",serif;font-size:1.15rem;margin-bottom:1rem;color:var(--text)}
+.clist{display:grid;gap:.85rem}
+.clist-item{display:flex;gap:.75rem;align-items:flex-start;font-size:.88rem;color:var(--text-m)}
+.clist-icon{font-size:1rem;flex-shrink:0;margin-top:.1rem}
+.clist-item strong{color:var(--text);display:block;margin-bottom:.1rem}
+.clist-item a{color:var(--blue)}
+.contact-btns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem}
+
+/* ===== MAP ===== */
+.map-grid{display:grid;gap:2rem}
+@media(min-width:768px){.map-grid{grid-template-columns:1fr 1.5fr;align-items:start}}
+.map-info p{color:var(--text-m);margin-bottom:.85rem}
+.map-meta{display:grid;gap:.5rem;margin-bottom:1.25rem}
+.map-meta li{font-size:.88rem;color:var(--text-m)}
+.map-meta a{color:var(--blue)}
+.map-embed{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)}
+.map-embed iframe{width:100%;height:300px;border:none;display:block}
+@media(min-width:768px){.map-embed iframe{height:340px}}
+
+/* ===== FOOTER ===== */
+.site-footer{background:#0f172a;color:#94a3b8;padding:3rem 0 1.25rem}
+.footer-grid{display:grid;gap:2.5rem;margin-bottom:2rem}
+@media(min-width:768px){.footer-grid{grid-template-columns:2fr 1.2fr 1.2fr}}
+.footer-brand p{font-size:.85rem;line-height:1.7;margin-top:.75rem;max-width:28ch}
+.footer-social{display:flex;gap:.6rem;margin-top:1rem}
+.footer-social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:rgba(255,255,255,.07);border-radius:50%;color:#94a3b8;transition:background .15s,color .15s}
+.footer-social a:hover{background:var(--blue);color:#fff}
+.footer-col h4{color:#f1f5f9;font-size:.85rem;font-weight:700;margin-bottom:.85rem;letter-spacing:.04em}
+.footer-col nav{display:grid;gap:.5rem}
+.footer-col nav a{font-size:.82rem;color:#64748b;transition:color .15s}
+.footer-col nav a:hover{color:#38bdf8}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:1.1rem;display:flex;flex-direction:column;gap:.3rem;font-size:.78rem}
+@media(min-width:640px){.footer-bottom{flex-direction:row;justify-content:space-between}}
+.footer-bottom a{color:#38bdf8}
+
+/* ===== ANIMATIONS ===== */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* ===== SKIP LINK ===== */
+.skip{position:absolute;left:-999px;top:0;background:var(--blue);color:#fff;padding:.5rem 1rem;border-radius:0 0 .5rem .5rem;font-weight:700;z-index:999}
+.skip:focus{left:1rem}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<!-- Floating Buttons -->
+<div class="fab-wrap">
+  <a href="https://wa.me/919311545841?text=Hi%20Doctor%2C%20I%20want%20to%20book%20an%20appointment%20at%20COSMODENTZ." target="_blank" rel="noopener" class="fab fab--wa" aria-label="WhatsApp">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="tel:+919473013806" class="fab fab--call" aria-label="Call">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+  </a>
+  <a href="#appointment" class="fab fab--book" aria-label="Book">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+  </a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="wrap nav-wrap">
+    <a href="#hero" class="brand" aria-label="COSMODENTZ home">
+      <svg class="brand-logo" width="38" height="38" viewBox="0 0 38 38" fill="none">
+        <rect width="38" height="38" rx="10" fill="url(#lg1)"/>
+        <path d="M11 14c2-4.5 14-4.5 16 0s-2 10-4 10c-1.5 0-2.2-1.2-4-1.2s-2.5 1.2-4 1.2c-2 0-6-5.5-4-10z" fill="white" opacity=".95"/>
+        <path d="M15 19c0 2.8 1 4.5 4 4.5s4-1.7 4-4.5" stroke="url(#lg1)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        <defs><linearGradient id="lg1" x1="0" y1="0" x2="38" y2="38"><stop stop-color="#0ea5e9"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+      </svg>
+      <div>
+        <div class="brand-name">COSMODENTZ</div>
+        <div class="brand-tagline">Dental Clinic · Motihari</div>
+      </div>
+    </a>
+    <nav class="nav" id="main-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Fees</a>
+      <a href="#doctor">Doctor</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="#appointment" class="nav-cta">Book Now</a>
+    </nav>
+    <button class="hamburger" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-content reveal">
+      <p class="hero-kicker">Motihari · Bihar · ISO 9001:2015 Certified</p>
+      <h1>Creating Beautiful <em>Smiles,</em><br>One Tooth at a Time</h1>
+      <p class="hero-body">Advanced, painless dental care by <strong>Dr. Pradeep Kumar Jayswal</strong> — root canals, implants, braces, smile designing and PRP hair treatments. 10+ years serving Motihari and East Champaran.</p>
+      <div class="hero-cta">
+        <a href="#appointment" class="btn btn--primary">📅 Book Appointment</a>
+        <a href="tel:+919473013806" class="btn btn--white">📞 Call Now</a>
+        <a href="https://wa.me/919311545841?text=Hi%20Doctor" target="_blank" rel="noopener" class="btn btn--ghost">💬 WhatsApp</a>
+      </div>
+      <div class="trust-row">
+        <span class="trust-pill">⭐ 4.9 Google Rating</span>
+        <span class="trust-pill">119+ Reviews</span>
+        <span class="trust-pill">10+ Years Experience</span>
+        <span class="trust-pill">1000+ Root Canals</span>
+      </div>
+      <div class="hero-ext">
+        <a href="https://www.google.com/maps/search/?api=1&query=COSMODENTZ+Dental+Clinic+Motihari" target="_blank" rel="noopener">📍 Open in Google Maps</a>
+        <a href="https://www.google.com/search?q=COSMODENTZ+Dental+Clinic+Motihari+reviews" target="_blank" rel="noopener">⭐ Read All Reviews</a>
+      </div>
+    </div>
+    <div class="hero-right reveal">
+      <div class="hcard">
+        <h3>Emergency Dental Care</h3>
+        <ul>
+          <li>Severe toothache relief</li>
+          <li>Wisdom tooth pain</li>
+          <li>Broken / knocked-out tooth</li>
+          <li>Swollen gum or jaw pain</li>
+        </ul>
+        <a href="tel:+919473013806" class="btn btn--primary btn--block" style="margin-top:1rem">📞 Call for Emergency</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><span class="stat-val" id="c1">0</span><span class="stat-lbl">Root canals</span></div>
+        <div class="stat"><span class="stat-val" id="c2">0</span><span class="stat-lbl">Reviews</span></div>
+        <div class="stat"><span class="stat-val">10+</span><span class="stat-lbl">Years exp.</span></div>
+      </div>
+      <div class="hours-bar">
+        <div class="dot"></div>
+        <span><strong>Mon–Sat:</strong> 9:30 AM – 8:00 PM &nbsp;|&nbsp; <strong>Sun:</strong> Closed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section section--alt">
+  <div class="wrap two-col two-col--60">
+    <div class="about-text reveal">
+      <p class="sec-label">About Us</p>
+      <h2 class="sec-title">Motihari's Trusted Dental &amp; Research Centre</h2>
+      <p>COSMODENTZ Dental Clinic is a comprehensive dental and hair treatment centre located at Chhatauni Chowk on NH 28, Motihari. Equipped with modern dental chairs, digital X-ray and rotary RCT instruments, the clinic delivers advanced treatment at honest prices with a patient-first philosophy.</p>
+      <p style="margin-top:.75rem">Whether it is a child's first filling, a working adult's crown, or a complete smile makeover — every treatment is personally guided by Dr. Pradeep to match your health, comfort and budget. No hidden charges, ever.</p>
+      <div class="badge-row">
+        <span class="badge">ISO 9001:2015</span>
+        <span class="badge">Advanced RCT Centre</span>
+        <span class="badge">Child Dental Care</span>
+        <span class="badge">Emergency Services</span>
+        <span class="badge">PRP Hair &amp; Facial</span>
+        <span class="badge">Smile Designing</span>
+      </div>
+    </div>
+    <div class="highlight-list reveal">
+      <div class="hl-item"><div class="hl-icon">🦷</div><div><h4>Pain-Free Treatment</h4><p>Modern anaesthesia and rotary techniques for comfortable, same-day procedures.</p></div></div>
+      <div class="hl-item"><div class="hl-icon">🔬</div><div><h4>Advanced Equipment</h4><p>Digital X-ray, rotary RCT instruments, modern sterilisation protocols.</p></div></div>
+      <div class="hl-item"><div class="hl-icon">👨‍👩‍👧‍👦</div><div><h4>Family &amp; Child Care</h4><p>Gentle treatment for all ages — infants, children, adults and seniors.</p></div></div>
+      <div class="hl-item"><div class="hl-icon">💰</div><div><h4>Transparent Pricing</h4><p>Honest fee estimates before any treatment — no surprise bills.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section" style="background:#f8fafc">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="sec-label">What We Do</p>
+      <h2 class="sec-title">Complete Dental &amp; Wellness Services</h2>
+      <p class="sec-desc">All dental and cosmetic treatments under one roof — from preventive check-ups to complex surgical and cosmetic procedures.</p>
+    </div>
+    <div class="services-grid">
+      <article class="svc-card reveal"><div class="svc-icon">🦷</div><h3>Root Canal Treatment (RCT)</h3><p>Single and multi-visit RCT for infected or painful teeth using rotary instruments and digital X-ray.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">✂️</div><h3>Tooth Extraction</h3><p>Simple and surgical extraction, including impacted wisdom teeth, with focus on pain control.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">✨</div><h3>Teeth Cleaning &amp; Scaling</h3><p>Professional scaling and polishing to remove tartar, stains and keep gums healthy.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🪥</div><h3>Fillings &amp; Restoration</h3><p>Tooth-coloured composite and GIC fillings to restore decayed teeth naturally and aesthetically.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">👑</div><h3>Crowns &amp; Bridges</h3><p>Ceramic, PFM and full-metal crowns and fixed bridges to restore function and appearance.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">😁</div><h3>Smile Designing</h3><p>Cosmetic corrections, bleaching, veneers, gap closure and complete smile makeovers.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🔩</div><h3>Dental Implants</h3><p>Fixed, natural-looking replacement for missing teeth — single and multiple implants available.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">😬</div><h3>Braces &amp; Orthodontics</h3><p>Correction of crooked teeth, spacing and bite problems using braces for teens and adults.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">👶</div><h3>Child Dental Care (CDC)</h3><p>Gentle fillings, pulpectomy for milk teeth, habit counselling and preventive care for kids.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🤰</div><h3>Pregnancy Dental Care</h3><p>Safe and gentle dental treatment for pregnant women with appropriate clinical precautions.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🩸</div><h3>Gum &amp; Flap Surgery</h3><p>Pyorrhea treatment, bleeding gum care, flap surgery to save teeth and underlying bone.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">💇</div><h3>PRP Hair &amp; Facial</h3><p>Platelet-rich plasma therapy for hair regrowth and skin rejuvenation — effective and safe.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🩻</div><h3>Digital X-Ray &amp; A-Ray</h3><p>In-house digital X-ray for accurate diagnosis. A-Ray for complex case assessments.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🦴</div><h3>Jaw Fracture Management</h3><p>Expert management of jaw injuries and facial trauma using specialist protocols.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">💎</div><h3>Dental Jewellery &amp; Bleaching</h3><p>Safe tooth jewellery application and professional bleaching for whiter, brighter teeth.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🚨</div><h3>Emergency Dental Care</h3><p>Walk-in emergency care for pain, swelling, trauma and accidents — no advance booking needed.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section section--alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="sec-label">Transparent Fees</p>
+      <h2 class="sec-title">Treatments &amp; Fee Guide</h2>
+      <p class="sec-desc">Approximate price ranges to help you plan. Exact fees are quoted after clinical examination and X-ray. No hidden charges.</p>
+    </div>
+    <div class="ptable-wrap reveal">
+      <table class="ptable">
+        <thead><tr><th>Treatment</th><th>Starting From</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Root Canal Treatment (RCT)</strong></td><td class="price">₹3,500 – ₹5,000</td><td>Per tooth, includes X-ray &amp; complete treatment</td></tr>
+          <tr><td><strong>Re-RCT (Retreatment)</strong></td><td class="price">₹3,500+</td><td>Previously treated tooth retreatment</td></tr>
+          <tr><td><strong>Digital X-Ray</strong></td><td class="price">₹300+</td><td>In-house digital dental X-ray</td></tr>
+          <tr><td><strong>A-Ray</strong></td><td class="price">₹3,500+</td><td>Advanced radiograph</td></tr>
+          <tr><td><strong>Tooth Extraction</strong></td><td class="price">₹500+</td><td>Simple extraction per tooth</td></tr>
+          <tr><td><strong>Braces (Full Package)</strong></td><td class="price">₹20,000+</td><td>Complete orthodontic treatment course</td></tr>
+          <tr><td><strong>Cosmetic Correction / Smile Design</strong></td><td class="price">₹6,000+</td><td>Smile designing &amp; composite corrections</td></tr>
+          <tr><td><strong>Dental Implant</strong></td><td class="price">₹20,000+</td><td>Per implant (crown charged separately)</td></tr>
+          <tr><td><strong>Minor Oral Surgery</strong></td><td class="price">₹1,000+</td><td>Cyst removal, minor gum surgeries</td></tr>
+          <tr><td><strong>Re-implantation of Tooth</strong></td><td class="price">₹1,500+</td><td>Re-fixing knocked-out teeth in suitable cases</td></tr>
+          <tr><td><strong>Pulpectomy (Child / Milk Tooth)</strong></td><td class="price">₹500+</td><td>Milk tooth nerve treatment</td></tr>
+          <tr><td><strong>Crown &amp; Bridge</strong></td><td class="price">As per material</td><td>Ceramic, PFM or metal options available</td></tr>
+          <tr><td><strong>Teeth Cleaning / Scaling</strong></td><td class="price">₹500+</td><td>Professional ultrasonic scaling &amp; polishing</td></tr>
+          <tr><td><strong>Dental Check-up</strong></td><td class="price">₹300+</td><td>Consultation, examination &amp; advice</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="price-note reveal">* Prices are indicative. Exact quotation provided after clinical examination. Fees may vary based on case complexity and materials chosen.</p>
+  </div>
+</section>
+
+<!-- DOCTOR -->
+<section id="doctor" class="section" style="background:#f8fafc">
+  <div class="wrap">
+    <div class="doctor-grid">
+      <div class="doc-card reveal">
+        <div class="doc-avatar">👨‍⚕️</div>
+        <h3>Dr. Pradeep Kr. Jayswal</h3>
+        <p>Oral &amp; Dental Surgeon</p>
+        <p style="margin-top:.5rem;font-size:.75rem;opacity:.75">B.D.S. (PGIMS Rohtak) · MPS Noida · CERT Cosmetic USA · D.Orthodontic · Ex-Senior Consultant, Apex Plus Superspeciality Hospital</p>
+        <a href="tel:+919473013806" class="btn btn--white btn--block" style="margin-top:1.25rem;font-size:.88rem">📞 Call Doctor</a>
+      </div>
+      <div class="doc-info reveal">
+        <p class="sec-label">Meet the Doctor</p>
+        <h2 class="sec-title">10+ Years of Painless, Ethical Dentistry</h2>
+        <p>Dr. Pradeep is an experienced oral and dental surgeon known for gentle, pain-free treatment and clear patient communication. He takes time to explain diagnosis and all available options so that every patient feels informed and confident before treatment begins.</p>
+        <p style="margin-top:.75rem">Special expertise in complex root canals and retreatments, orthodontic braces, dental implants, cosmetic smile designing and oral surgical procedures. He treats patients of all ages — from toddlers to seniors.</p>
+        <ul class="doc-quals">
+          <li>Expert in complex RCT, re-RCT and retreatments</li>
+          <li>Implants, braces &amp; full-mouth rehabilitation</li>
+          <li>Cosmetic smile designing &amp; smile makeovers</li>
+          <li>Gentle approach for children and anxious patients</li>
+          <li>Member: American Dental Association · Indian Academy of Aesthetic &amp; Cosmetic Dentistry · Sports Dentistry · Sleep Medicine · Royal Society of Public Health, London</li>
+          <li>Branches in Rohtak, Gurugram, Delhi, Jind, Charkhi Dadri &amp; Motihari</li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem">
+          <a href="tel:+919473013806" class="btn btn--primary">📞 Call Now</a>
+          <a href="https://wa.me/919311545841" target="_blank" rel="noopener" class="btn btn--outline">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section section--dark">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="sec-label" style="color:#7dd3fc">Patient Feedback</p>
+      <h2 class="sec-title sec-title--light">Google Reviews — 4.9 ⭐ (119+)</h2>
+      <p class="sec-desc" style="color:#94a3b8">Real patient experiences. Read the full list on Google.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-card reveal"><div class="stars">★★★★★</div><p class="review-text">"Dr. Pradeep removed my wisdom tooth very smoothly without any pain. He is very simple and gentle. I was amazed by how comfortable the experience was."</p><p class="reviewer">— Suresh Kumar, Motihari</p></article>
+      <article class="review-card reveal"><div class="stars">★★★★★</div><p class="review-text">"A complex root canal procedure was handled with such skill and precision. The service is excellent and the results are satisfying. Highly recommended."</p><p class="reviewer">— Anita Jha, East Champaran</p></article>
+      <article class="review-card reveal"><div class="stars">★★★★★</div><p class="review-text">"Very professional clinic with modern machines. All charges are explained before starting — completely transparent. Best dental clinic in Motihari."</p><p class="reviewer">— Rahul Jaiswal, Motihari</p></article>
+    </div>
+    <div class="reviews-btns reveal">
+      <a href="https://www.google.com/search?q=COSMODENTZ+Dental+Clinic+Motihari+reviews" target="_blank" rel="noopener" class="btn btn--white">⭐ View All Google Reviews</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=COSMODENTZ+Dental+Clinic+Motihari" target="_blank" rel="noopener" class="btn btn--ghost">📍 Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section section--alt">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <p class="sec-label">Common Questions</p>
+      <h2 class="sec-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq-item reveal" open>
+        <summary>Is root canal treatment painful?</summary>
+        <div class="faq-body"><p>Modern RCT is done under local anaesthesia using rotary instruments — most patients feel no pain. You can return to normal activities the same day. Mild sensitivity for 1-2 days after is normal and resolves quickly.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How long does a dental implant take?</summary>
+        <div class="faq-body"><p>Implant surgery takes about 1 hour. After 2-3 months of healing (osseointegration), the final crown is placed. Total process takes 3-4 months. Temporary solutions may be available in some cases.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>What is the cost of braces in Motihari?</summary>
+        <div class="faq-body"><p>At COSMODENTZ, a full braces (orthodontic) treatment package starts from ₹20,000. The exact amount depends on case complexity, type of braces chosen and duration. A personalised quote is given after an orthodontic consultation.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>At what age should children visit a dentist?</summary>
+        <div class="faq-body"><p>The first dental visit should ideally be when the first milk tooth appears (around 6 months). Regular visits every 6 months are recommended from age 2. Early visits help identify decay and habits that affect tooth alignment.</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>How can I book an appointment?</summary>
+        <div class="faq-body"><p>Call <a href="tel:+919473013806">+91 94730 13806</a>, WhatsApp <a href="https://wa.me/919311545841">+91 93115 45841</a>, or use the appointment form below. Walk-ins are welcome during clinic hours (Mon–Sat, 9:30 AM–8:00 PM).</p></div>
+      </details>
+      <details class="faq-item reveal">
+        <summary>What is PRP hair treatment?</summary>
+        <div class="faq-body"><p>Platelet Rich Plasma (PRP) therapy involves drawing a small amount of blood, processing it to concentrate growth factors, and injecting it into the scalp to stimulate hair follicles. 3-4 sessions are recommended, typically 4-6 weeks apart. PRP facials use the same technique for skin rejuvenation.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment" class="section" style="background:#f8fafc">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <p class="sec-label">Get in Touch</p>
+      <h2 class="sec-title">Book Your Appointment</h2>
+      <p class="sec-desc" style="margin-inline:auto">Fill the form — your details will be sent directly to the clinic WhatsApp (+91 93115 45841) for quick confirmation.</p>
+    </div>
+    <div class="appt-grid">
+      <form id="apptForm" class="appt-form reveal" novalidate>
+        <div class="field">
+          <label for="fn">Full Name *</label>
+          <input type="text" id="fn" name="name" required autocomplete="name" placeholder="Your full name"/>
+          <span class="field-err" id="err-name"></span>
+        </div>
+        <div class="field">
+          <label for="fp">Phone Number *</label>
+          <input type="tel" id="fp" name="phone" required autocomplete="tel" placeholder="+91 XXXXX XXXXX"/>
+          <span class="field-err" id="err-phone"></span>
+        </div>
+        <div class="field">
+          <label for="ft">Treatment Needed</label>
+          <select id="ft" name="treatment">
+            <option value="">Select treatment...</option>
+            <option>Dental Check-up</option>
+            <option>Root Canal (RCT)</option>
+            <option>Tooth Extraction</option>
+            <option>Teeth Cleaning / Scaling</option>
+            <option>Braces / Orthodontics</option>
+            <option>Dental Implant</option>
+            <option>Cosmetic / Smile Designing</option>
+            <option>Crowns &amp; Bridges</option>
+            <option>Child Dental Care</option>
+            <option>PRP Hair / Facial</option>
+            <option>Gum Treatment</option>
+            <option>Emergency</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fm">Message / Preferred Time</label>
+          <textarea id="fm" name="message" rows="3" placeholder="Briefly describe your problem or preferred date and time."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">💬 Send via WhatsApp</button>
+        <p class="form-note">Clicking above opens WhatsApp with your appointment details pre-filled to +91 93115 45841.</p>
+      </form>
+      <div class="contact-box reveal">
+        <h3>Contact &amp; Timings</h3>
+        <ul class="clist">
+          <li class="clist-item"><span class="clist-icon">📞</span><div><strong>Phone</strong><a href="tel:+919473013806">+91 94730 13806</a></div></li>
+          <li class="clist-item"><span class="clist-icon">💬</span><div><strong>WhatsApp</strong><a href="https://wa.me/919311545841" target="_blank" rel="noopener">+91 93115 45841</a></div></li>
+          <li class="clist-item"><span class="clist-icon">📍</span><div><strong>Address</strong>NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony, Motihari, Bihar 845401</div></li>
+          <li class="clist-item"><span class="clist-icon">🕐</span><div><strong>Timings</strong>Mon–Sat: 9:30 AM – 8:00 PM<br>Sunday: Closed</div></li>
+        </ul>
+        <div class="contact-btns">
+          <a href="tel:+919473013806" class="btn btn--primary">📞 Call Now</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=COSMODENTZ+Dental+Clinic+Motihari" target="_blank" rel="noopener" class="btn btn--outline">📍 Navigate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & MAP -->
+<section id="contact" class="section section--alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="sec-label">Find Us</p>
+      <h2 class="sec-title">Location &amp; Directions</h2>
+    </div>
+    <div class="map-grid">
+      <div class="map-info reveal">
+        <p>Located on <strong>NH 28, Chhatauni Chowk</strong>, opposite Jaiswal Hotel — easily accessible from all parts of Motihari and East Champaran district.</p>
+        <ul class="map-meta">
+          <li>📍 NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony, Motihari, Bihar 845401</li>
+          <li>📞 <a href="tel:+919473013806">+91 94730 13806</a></li>
+          <li>💬 <a href="https://wa.me/919311545841" target="_blank" rel="noopener">+91 93115 45841 (WhatsApp)</a></li>
+          <li>🕐 Mon–Sat: 9:30 AM – 8:00 PM · Sunday: Closed</li>
+        </ul>
+        <a href="https://www.google.com/maps/search/?api=1&query=COSMODENTZ+Dental+Clinic+NH+28+Motihari" target="_blank" rel="noopener" class="btn btn--primary">🗺️ Open in Google Maps</a>
+      </div>
+      <div class="map-embed reveal">
+        <iframe title="COSMODENTZ Dental Clinic Motihari" src="https://maps.google.com/maps?q=COSMODENTZ+Dental+Clinic+Motihari+Bihar&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:.5rem">
+        <svg width="32" height="32" viewBox="0 0 38 38" fill="none"><rect width="38" height="38" rx="10" fill="url(#lg2)"/><path d="M11 14c2-4.5 14-4.5 16 0s-2 10-4 10c-1.5 0-2.2-1.2-4-1.2s-2.5 1.2-4 1.2c-2 0-6-5.5-4-10z" fill="white" opacity=".95"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="38" y2="38"><stop stop-color="#0ea5e9"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs></svg>
+        <span style="font-weight:800;color:#f1f5f9;font-size:1rem">COSMODENTZ Dental Clinic</span>
+      </div>
+      <p>Comprehensive dental and hair care centre in Motihari — painless, ethical treatment for the whole family.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/CosmodentzMotihari/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="https://wa.me/919311545841" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <nav aria-label="Footer nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Fees</a>
+        <a href="#doctor">Doctor</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#appointment">Book Appointment</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-col">
+      <h4>Key Treatments</h4>
+      <nav aria-label="Treatments nav">
+        <a href="#services">Root Canal (RCT)</a>
+        <a href="#services">Dental Implants</a>
+        <a href="#services">Braces / Orthodontics</a>
+        <a href="#services">Smile Designing</a>
+        <a href="#services">Child Dental Care</a>
+        <a href="#services">PRP Hair Treatment</a>
+        <a href="#services">Emergency Care</a>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="yr"></span> COSMODENTZ Dental Clinic, NH 28, Motihari, Bihar. All rights reserved.</p>
+    <p><a href="tel:+919473013806">+91 94730 13806</a> &nbsp;·&nbsp; <a href="https://wa.me/919311545841">+91 93115 45841</a></p>
+  </div>
+</footer>
+
+<script>
+// Year
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+// Hamburger
+const hbg = document.getElementById("hbg");
+const nav = document.getElementById("main-nav");
+hbg.addEventListener("click", () => {
+  const open = nav.classList.toggle("open");
+  hbg.classList.toggle("open", open);
+  hbg.setAttribute("aria-expanded", open);
+});
+nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+  nav.classList.remove("open");
+  hbg.classList.remove("open");
+  hbg.setAttribute("aria-expanded", "false");
+}));
+
+// Sticky header shadow
+const header = document.querySelector(".site-header");
+window.addEventListener("scroll", () => {
+  header.style.boxShadow = window.scrollY > 10 ? "0 2px 24px rgba(0,0,0,.35)" : "none";
+}, { passive: true });
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+// Counter animation
+function animateCounter(el, target) {
+  const dur = 1800, step = 16;
+  let current = 0;
+  const increment = target / (dur / step);
+  const timer = setInterval(() => {
+    current = Math.min(current + increment, target);
+    el.textContent = (current >= 1000 ? Math.round(current / 100) * 100 : Math.round(current)) + (target >= 1000 ? "+" : "+");
+    if (current >= target) clearInterval(timer);
+  }, step);
+}
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounter(document.getElementById("c1"), 1000);
+      animateCounter(document.getElementById("c2"), 119);
+      counterObserver.disconnect();
+    }
+  });
+});
+const heroSection = document.getElementById("hero");
+if (heroSection) counterObserver.observe(heroSection);
+
+// Appointment WhatsApp form
+document.getElementById("apptForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const name = this.name.value.trim();
+  const phone = this.phone.value.trim();
+  const treatment = this.treatment.value;
+  const message = this.message.value.trim();
+  let valid = true;
+  document.getElementById("err-name").textContent = "";
+  document.getElementById("err-phone").textContent = "";
+  if (!name) { document.getElementById("err-name").textContent = "Please enter your name."; valid = false; }
+  if (!phone) { document.getElementById("err-phone").textContent = "Please enter your phone number."; valid = false; }
+  if (!valid) return;
+  const text = encodeURIComponent(
+    "New Appointment Request - COSMODENTZ\n" +
+    "Name: " + name + "\n" +
+    "Phone: " + phone + "\n" +
+    "Treatment: " + (treatment || "Not specified") + "\n" +
+    "Message: " + (message || "No message")
+  );
+  window.open("https://wa.me/919311545841?text=" + text, "_blank");
+});
+
+// FAQ close others
+document.querySelectorAll(".faq-item").forEach(item => {
+  item.addEventListener("toggle", () => {
+    if (item.open) {
+      document.querySelectorAll(".faq-item").forEach(other => {
+        if (other !== item) other.removeAttribute("open");
+      });
+    }
+  });
+});
+</script>
+</body>
+</html>
