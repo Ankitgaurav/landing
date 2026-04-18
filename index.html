@@ -4,16 +4,15 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>COSMODENTZ Dental Clinic – Motihari, Bihar</title>
-<meta name="description" content="COSMODENTZ Dental Clinic Motihari – painless RCT, implants, braces, smile designing, child dental care & PRP treatments by Dr. Pradeep. Google 4.9★ (119 reviews)."/>
+<meta name="description" content="COSMODENTZ Dental Clinic Motihari – painless RCT, implants, braces, smile designing, child dental care & PRP treatments by Dr. Pradeep. Google 4.9★"/>
 <meta name="keywords" content="cosmodentz dental clinic motihari, dentist motihari, dr pradeep motihari, root canal motihari, implants motihari, braces motihari"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dentist","name":"COSMODENTZ Dental Clinic","telephone":"+91-9473013806","address":{"@type":"PostalAddress","streetAddress":"NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony","addressLocality":"Motihari","addressRegion":"Bihar","postalCode":"845401","addressCountry":"IN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"119"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@0,600;1,600&display=swap" rel="stylesheet"/>
 <style>
-/* ===== RESET & BASE ===== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 1rem)}
 body{font-family:"Plus Jakarta Sans",sans-serif;font-size:1rem;line-height:1.65;color:#1e293b;background:#f8fafc}
 img,svg{display:block;max-width:100%}
 a{text-decoration:none;color:inherit}
@@ -22,7 +21,6 @@ button{cursor:pointer;font:inherit}
 h1,h2,h3,h4{line-height:1.2;text-wrap:balance}
 p{text-wrap:pretty;max-width:72ch}
 
-/* ===== TOKENS ===== */
 :root{
   --blue:#0ea5e9;
   --teal:#0d9488;
@@ -42,7 +40,6 @@ p{text-wrap:pretty;max-width:72ch}
   --nav-h:68px;
 }
 
-/* ===== LAYOUT ===== */
 .wrap{width:min(1140px,100% - 2.5rem);margin-inline:auto}
 .section{padding:4.5rem 0}
 .section--alt{background:#ffffff}
@@ -55,7 +52,6 @@ p{text-wrap:pretty;max-width:72ch}
 @media(min-width:768px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
 @media(min-width:900px){.two-col--60{grid-template-columns:3fr 2fr}}
 
-/* ===== BUTTONS ===== */
 .btn{display:inline-flex;align-items:center;gap:.4rem;padding:.6rem 1.4rem;border-radius:999px;font-weight:600;font-size:.9rem;border:2px solid transparent;transition:all .18s ease;white-space:nowrap}
 .btn--primary{background:var(--grad);color:#fff;box-shadow:0 6px 20px rgba(14,165,233,.35)}
 .btn--primary:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(14,165,233,.4)}
@@ -67,7 +63,6 @@ p{text-wrap:pretty;max-width:72ch}
 .btn--ghost:hover{background:rgba(255,255,255,.2)}
 .btn--block{width:100%;justify-content:center;padding:.75rem 1.4rem;font-size:1rem}
 
-/* ===== FLOATING BUTTONS ===== */
 .fab-wrap{position:fixed;bottom:1.25rem;right:1.25rem;z-index:100;display:flex;flex-direction:column;gap:.6rem}
 .fab{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);border:none;transition:transform .15s}
 .fab:hover{transform:scale(1.1)}
@@ -75,11 +70,9 @@ p{text-wrap:pretty;max-width:72ch}
 .fab--call{background:var(--blue)}
 .fab--book{background:#6366f1}
 
-/* ===== HEADER / NAV ===== */
-.site-header{position:sticky;top:0;z-index:300;background:rgba(15,23,42,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#e2e8f0;height:var(--nav-h)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:50;background:rgba(15,23,42,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#e2e8f0;height:var(--nav-h)}
 .nav-wrap{display:flex;align-items:center;justify-content:space-between;height:100%;gap:1rem}
 .brand{display:flex;align-items:center;gap:.55rem}
-.brand-logo{flex-shrink:0}
 .brand-name{font-weight:800;font-size:1rem;line-height:1.1}
 .brand-tagline{font-size:.65rem;opacity:.7;font-weight:400}
 .nav{display:flex;align-items:center;gap:1.5rem;font-size:.85rem}
@@ -87,35 +80,23 @@ p{text-wrap:pretty;max-width:72ch}
 .nav a:hover{opacity:1}
 .nav-cta{background:var(--grad);color:#fff!important;opacity:1!important;padding:.4rem 1.1rem;border-radius:999px;font-weight:700}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:.3rem}
-.hamburger{
-  position: relative;
-  z-index: 200;
-}
 .hamburger span{display:block;width:22px;height:2px;background:#e2e8f0;border-radius:2px;transition:all .25s}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:860px){
-.nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100vh;
-  background:#0f172a;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:1.5rem;
-  transform:translateY(-100%);
-  transition:transform .3s ease;
-  z-index:100;
-}  .nav.open{transform:translateY(0);pointer-events:auto}
+  .nav{position:fixed;inset:var(--nav-h) 0 auto 0;background:#0f172a;flex-direction:column;padding:1.5rem;gap:1rem;transform:translateY(-110%);transition:transform .3s ease;pointer-events:none}
+  .nav.open{transform:translateY(0);pointer-events:auto}
   .hamburger{display:flex}
 }
 
-/* ===== HERO ===== */
-.hero{background:radial-gradient(ellipse at 30% 0%,#0c4a6e 0%,#0f172a 55%,#042f2e 100%);color:#e2e8f0;padding:5rem 0 4rem}
+.hero{
+  /* PHOTO: replace hero-bg.jpg with your clinic/treatment photo */
+  background:url("hero-bg.jpg") center/cover no-repeat, radial-gradient(ellipse at 30% 0%,#0c4a6e 0%,#0f172a 55%,#042f2e 100%);
+  color:#e2e8f0;padding:5rem 0 4rem;position:relative
+}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,74,110,.88) 0%,rgba(15,23,42,.85) 55%,rgba(4,47,46,.88) 100%);z-index:0}
+.hero .wrap{position:relative;z-index:1}
 .hero-grid{display:grid;gap:2.5rem;align-items:center}
 @media(min-width:900px){.hero-grid{grid-template-columns:3fr 2.5fr}}
 .hero-kicker{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7dd3fc;margin-bottom:.75rem}
@@ -129,7 +110,6 @@ p{text-wrap:pretty;max-width:72ch}
 .hero-ext a{color:#7dd3fc;opacity:.9}
 .hero-ext a:hover{opacity:1;text-decoration:underline}
 
-/* Hero right cards */
 .hero-right{display:grid;gap:1rem}
 .hcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:1.25rem 1.35rem}
 .hcard h3{font-size:1rem;font-weight:700;margin-bottom:.6rem;color:#f0f9ff}
@@ -143,7 +123,26 @@ p{text-wrap:pretty;max-width:72ch}
 .hours-bar{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:.75rem;padding:.7rem 1rem;display:flex;align-items:center;gap:.6rem;font-size:.82rem;color:#cbd5e1}
 .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;box-shadow:0 0 8px #22c55e}
 
-/* ===== ABOUT ===== */
+/* TICKER */
+.ticker{background:#0f172a;overflow:hidden;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);padding:.55rem 0}
+.ticker__track{display:flex;white-space:nowrap;animation:ticker-scroll 30s linear infinite}
+.ticker__track:hover{animation-play-state:paused}
+.ticker__item{display:inline-flex;align-items:center;gap:.5rem;padding:0 2rem;font-size:.82rem;font-weight:700;color:#7dd3fc}
+.ticker__item span{color:#5eead4}
+@keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* STATS SECTION */
+.stats-section{background:linear-gradient(135deg,#0f172a 0%,#0c2340 100%);padding:4.5rem 0}
+.stats-header{text-align:center;margin-bottom:2.5rem}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+@media(min-width:540px){.stats-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
+.stat-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:1.25rem;padding:1.5rem 1rem;text-align:center;transition:transform .18s,background .18s}
+.stat-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.09)}
+.stat-card-ico{font-size:2.2rem;margin-bottom:.6rem;line-height:1}
+.stat-card-num{font-size:1.75rem;font-weight:800;color:#38bdf8;line-height:1;margin-bottom:.35rem}
+.stat-card-lbl{font-size:.8rem;color:#94a3b8;font-weight:500}
+
 .about-text p{color:var(--text-m);margin-bottom:.85rem}
 .badge-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
 .badge{background:#e0f2fe;color:#075985;border-radius:999px;padding:.25rem .75rem;font-size:.78rem;font-weight:600}
@@ -153,7 +152,6 @@ p{text-wrap:pretty;max-width:72ch}
 .hl-item h4{font-size:.95rem;font-weight:700;margin-bottom:.2rem}
 .hl-item p{font-size:.88rem;color:var(--text-m)}
 
-/* ===== SERVICES ===== */
 .services-grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));margin-top:2rem}
 .svc-card{background:#fff;border:1px solid var(--surface3);border-radius:var(--radius);padding:1.25rem 1.35rem;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
 .svc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
@@ -161,29 +159,10 @@ p{text-wrap:pretty;max-width:72ch}
 .svc-card h3{font-size:.95rem;font-weight:700;margin-bottom:.35rem}
 .svc-card p{font-size:.85rem;color:var(--text-m)}
 
-/* ===== PRICING ===== */
-.ptable-wrap{overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow);margin-top:1.5rem}
-.ptable{width:100%;border-collapse:collapse;background:#fff;font-size:.9rem}
-.ptable thead tr{background:var(--grad);color:#fff}
-.ptable th{padding:.85rem 1.1rem;text-align:left;font-weight:700;font-size:.82rem;white-space:nowrap}
-.ptable td{padding:.75rem 1.1rem;border-bottom:1px solid #f1f5f9;vertical-align:top}
-.ptable tbody tr:hover{background:#f8fafc}
-.ptable tbody tr:last-child td{border-bottom:none}
-.price{font-weight:700;color:var(--teal);white-space:nowrap}
-.ptable td:last-child{color:var(--text-m);font-size:.82rem}
-.price-note{margin-top:1rem;font-size:.82rem;color:var(--text-s);font-style:italic}
-
-/* ===== DOCTOR ===== */
 .doctor-grid{display:grid;gap:2.5rem;align-items:start}
 @media(min-width:768px){.doctor-grid{grid-template-columns:auto 1fr}}
 .doc-card{background:var(--grad);border-radius:var(--radius);padding:2rem 1.5rem;text-align:center;color:#fff;min-width:200px}
-.doc-avatar{width:110px;height:110px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;font-size:2.5rem}
-.doc-avatar img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:50%;
-}
+.doc-avatar{width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;font-size:2.5rem}
 .doc-card h3{font-family:"Lora",serif;font-size:1.2rem;margin-bottom:.2rem}
 .doc-card p{font-size:.82rem;opacity:.85}
 .doc-info p{color:var(--text-m);margin-bottom:.75rem}
@@ -191,7 +170,6 @@ p{text-wrap:pretty;max-width:72ch}
 .doc-quals li{font-size:.88rem;color:var(--text-m);padding-left:1.1rem;position:relative}
 .doc-quals li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
 
-/* ===== REVIEWS ===== */
 .reviews-grid{display:grid;gap:1.25rem;margin-top:1.5rem}
 @media(min-width:768px){.reviews-grid{grid-template-columns:repeat(3,1fr)}}
 .review-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:1.3rem 1.4rem}
@@ -200,7 +178,6 @@ p{text-wrap:pretty;max-width:72ch}
 .reviewer{font-size:.8rem;font-weight:600;color:#94a3b8}
 .reviews-btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
 
-/* ===== FAQ ===== */
 .faq-wrap{max-width:720px;margin:1.5rem auto 0}
 .faq-item{background:#fff;border:1px solid var(--surface3);border-radius:.75rem;margin-bottom:.6rem;overflow:hidden;box-shadow:var(--shadow)}
 .faq-item summary{padding:1rem 1.25rem;cursor:pointer;font-weight:600;font-size:.95rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:.5rem}
@@ -209,7 +186,6 @@ p{text-wrap:pretty;max-width:72ch}
 .faq-body{padding:0 1.25rem 1rem;font-size:.9rem;color:var(--text-m)}
 .faq-body a{color:var(--blue)}
 
-/* ===== APPOINTMENT ===== */
 .appt-grid{display:grid;gap:2rem}
 @media(min-width:768px){.appt-grid{grid-template-columns:3fr 2fr;align-items:start}}
 .appt-form{background:#fff;border-radius:var(--radius);padding:1.75rem;box-shadow:var(--shadow-lg);border:1px solid var(--surface3)}
@@ -228,7 +204,6 @@ p{text-wrap:pretty;max-width:72ch}
 .clist-item a{color:var(--blue)}
 .contact-btns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.25rem}
 
-/* ===== MAP ===== */
 .map-grid{display:grid;gap:2rem}
 @media(min-width:768px){.map-grid{grid-template-columns:1fr 1.5fr;align-items:start}}
 .map-info p{color:var(--text-m);margin-bottom:.85rem}
@@ -239,7 +214,6 @@ p{text-wrap:pretty;max-width:72ch}
 .map-embed iframe{width:100%;height:300px;border:none;display:block}
 @media(min-width:768px){.map-embed iframe{height:340px}}
 
-/* ===== FOOTER ===== */
 .site-footer{background:#0f172a;color:#94a3b8;padding:3rem 0 1.25rem}
 .footer-grid{display:grid;gap:2.5rem;margin-bottom:2rem}
 @media(min-width:768px){.footer-grid{grid-template-columns:2fr 1.2fr 1.2fr}}
@@ -255,21 +229,62 @@ p{text-wrap:pretty;max-width:72ch}
 @media(min-width:640px){.footer-bottom{flex-direction:row;justify-content:space-between}}
 .footer-bottom a{color:#38bdf8}
 
-/* ===== ANIMATIONS ===== */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
 .reveal.visible{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
-
-/* ===== SKIP LINK ===== */
 .skip{position:absolute;left:-999px;top:0;background:var(--blue);color:#fff;padding:.5rem 1rem;border-radius:0 0 .5rem .5rem;font-weight:700;z-index:999}
 .skip:focus{left:1rem}
+
+@media(max-width:860px){
+  .hero{padding-top:calc(var(--nav-h) + 2.5rem) !important}
+}
+
+/* ===== PHOTO GALLERY STRIP ===== */
+.gallery-section{background:#0f172a;padding:4rem 0}
+.gallery-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+@media(min-width:640px){.gallery-strip{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.gallery-strip{grid-template-columns:repeat(6,1fr)}}
+.gallery-item{position:relative;border-radius:.75rem;overflow:hidden;aspect-ratio:1;background:#1e293b;cursor:pointer;group}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;display:block}
+.gallery-item:hover img{transform:scale(1.07)}
+.gallery-item .g-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:.72rem;font-weight:600;padding:.5rem .6rem;transform:translateY(100%);transition:transform .25s}
+.gallery-item:hover .g-label{transform:translateY(0)}
+.photo-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;background:linear-gradient(135deg,#1e293b,#0f2840);color:#64748b;font-size:.75rem;font-weight:600;text-align:center;padding:.5rem}
+.photo-placeholder span{font-size:1.8rem}
+
+/* ===== BEFORE / DURING / AFTER ===== */
+.bda-section{background:#f8fafc;padding:4.5rem 0}
+.bda-grid{display:grid;gap:2rem;margin-top:2rem}
+@media(min-width:768px){.bda-grid{grid-template-columns:repeat(3,1fr)}}
+.bda-card{background:#fff;border-radius:1.25rem;overflow:hidden;box-shadow:0 4px 24px rgba(15,23,42,.08);transition:transform .2s}
+.bda-card:hover{transform:translateY(-4px)}
+.bda-badge{display:inline-block;padding:.3rem .9rem;border-radius:999px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.bda-badge--before{background:#fee2e2;color:#b91c1c}
+.bda-badge--during{background:#fef3c7;color:#92400e}
+.bda-badge--after{background:#dcfce7;color:#15803d}
+.bda-img{aspect-ratio:4/3;background:#f1f5f9;overflow:hidden;position:relative}
+.bda-img img{width:100%;height:100%;object-fit:cover}
+.bda-info{padding:1.1rem 1.25rem}
+.bda-info h4{font-size:.95rem;font-weight:700;margin-bottom:.3rem}
+.bda-info p{font-size:.82rem;color:#64748b}
+.bda-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;color:#94a3b8;font-size:.8rem;font-weight:600;text-align:center;padding:1rem}
+.bda-placeholder span{font-size:2.5rem}
+
+/* ===== XRAY / RESULTS STRIP ===== */
+.xray-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.5rem}
+@media(min-width:640px){.xray-strip{grid-template-columns:repeat(4,1fr)}}
+.xray-card{border-radius:.75rem;overflow:hidden;aspect-ratio:3/4;position:relative;background:#0f172a}
+.xray-card img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.xray-label{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.6);color:#e2e8f0;font-size:.72rem;font-weight:600;padding:.45rem .6rem;text-align:center}
+.xray-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;background:linear-gradient(135deg,#0f172a,#1e3a5f);color:#475569;font-size:.72rem;font-weight:600;text-align:center;padding:.5rem}
+.xray-placeholder span{font-size:2rem;opacity:.5}
+
 </style>
 </head>
 <body>
 
 <a href="#main" class="skip">Skip to main content</a>
 
-<!-- Floating Buttons -->
 <div class="fab-wrap">
   <a href="https://wa.me/919311545841?text=Hi%20Doctor%2C%20I%20want%20to%20book%20an%20appointment%20at%20COSMODENTZ." target="_blank" rel="noopener" class="fab fab--wa" aria-label="WhatsApp">
     <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -282,11 +297,10 @@ p{text-wrap:pretty;max-width:72ch}
   </a>
 </div>
 
-<!-- Header -->
 <header class="site-header">
   <div class="wrap nav-wrap">
     <a href="#hero" class="brand" aria-label="COSMODENTZ home">
-      <svg class="brand-logo" width="38" height="38" viewBox="0 0 38 38" fill="none">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
         <rect width="38" height="38" rx="10" fill="url(#lg1)"/>
         <path d="M11 14c2-4.5 14-4.5 16 0s-2 10-4 10c-1.5 0-2.2-1.2-4-1.2s-2.5 1.2-4 1.2c-2 0-6-5.5-4-10z" fill="white" opacity=".95"/>
         <path d="M15 19c0 2.8 1 4.5 4 4.5s4-1.7 4-4.5" stroke="url(#lg1)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
@@ -300,7 +314,7 @@ p{text-wrap:pretty;max-width:72ch}
     <nav class="nav" id="main-nav">
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#pricing">Fees</a>
+      <a href="#numbers">Numbers</a>
       <a href="#doctor">Doctor</a>
       <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
@@ -313,7 +327,7 @@ p{text-wrap:pretty;max-width:72ch}
   </div>
 </header>
 
-<main id="main">
+<main id="main" style="padding-top:var(--nav-h)">
 
 <!-- HERO -->
 <section id="hero" class="hero">
@@ -331,7 +345,7 @@ p{text-wrap:pretty;max-width:72ch}
         <span class="trust-pill">⭐ 4.9 Google Rating</span>
         <span class="trust-pill">119+ Reviews</span>
         <span class="trust-pill">10+ Years Experience</span>
-        <span class="trust-pill">1000+ Root Canals</span>
+        <span class="trust-pill">35,000+ Patients</span>
       </div>
       <div class="hero-ext">
         <a href="https://www.google.com/maps/search/?api=1&query=COSMODENTZ+Dental+Clinic+Motihari" target="_blank" rel="noopener">📍 Open in Google Maps</a>
@@ -350,9 +364,9 @@ p{text-wrap:pretty;max-width:72ch}
         <a href="tel:+919473013806" class="btn btn--primary btn--block" style="margin-top:1rem">📞 Call for Emergency</a>
       </div>
       <div class="stat-row">
-        <div class="stat"><span class="stat-val" id="c1">0</span><span class="stat-lbl">Root canals</span></div>
+        <div class="stat"><span class="stat-val" id="c1">0</span><span class="stat-lbl">Total OPD</span></div>
         <div class="stat"><span class="stat-val" id="c2">0</span><span class="stat-lbl">Reviews</span></div>
-        <div class="stat"><span class="stat-val">10+</span><span class="stat-lbl">Years exp.</span></div>
+        <div class="stat"><span class="stat-val">10+</span><span class="stat-lbl">Yrs exp.</span></div>
       </div>
       <div class="hours-bar">
         <div class="dot"></div>
@@ -361,6 +375,96 @@ p{text-wrap:pretty;max-width:72ch}
     </div>
   </div>
 </section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span class="ticker__item">📋 35,000+ <span>Total OPD</span></span>
+    <span class="ticker__item">🦷 5,000+ <span>RCT Done</span></span>
+    <span class="ticker__item">🔄 3,000+ <span>Re-RCT</span></span>
+    <span class="ticker__item">✂️ 5,000+ <span>Extractions</span></span>
+    <span class="ticker__item">😬 300+ <span>Braces</span></span>
+    <span class="ticker__item">⚕️ 1,000+ <span>Surgeries</span></span>
+    <span class="ticker__item">🔩 200+ <span>Implants</span></span>
+    <span class="ticker__item">✨ 1,000+ <span>Cosmetic Corrections</span></span>
+    <span class="ticker__item">🧼 7,000+ <span>Scaling & Root Planing</span></span>
+    <span class="ticker__item">⭐ 4.9 <span>Google Rating</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker__item">📋 35,000+ <span>Total OPD</span></span>
+    <span class="ticker__item">🦷 5,000+ <span>RCT Done</span></span>
+    <span class="ticker__item">🔄 3,000+ <span>Re-RCT</span></span>
+    <span class="ticker__item">✂️ 5,000+ <span>Extractions</span></span>
+    <span class="ticker__item">😬 300+ <span>Braces</span></span>
+    <span class="ticker__item">⚕️ 1,000+ <span>Surgeries</span></span>
+    <span class="ticker__item">🔩 200+ <span>Implants</span></span>
+    <span class="ticker__item">✨ 1,000+ <span>Cosmetic Corrections</span></span>
+    <span class="ticker__item">🧼 7,000+ <span>Scaling & Root Planing</span></span>
+    <span class="ticker__item">⭐ 4.9 <span>Google Rating</span></span>
+  </div>
+</div>
+
+<!-- PHOTO GALLERY STRIP -->
+<section class="gallery-section" id="gallery">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <p class="sec-label" style="color:#7dd3fc">Inside the Clinic</p>
+      <h2 class="sec-title sec-title--light">Our Clinic &amp; Team</h2>
+      <p style="color:#94a3b8;max-width:500px;margin:0 auto .5rem">A modern, clean and fully equipped dental clinic in the heart of Motihari.</p>
+    </div>
+    <div class="gallery-strip">
+
+      <!-- PHOTO 1: Replace src with your photo file e.g. clinic-reception.jpg -->
+      <div class="gallery-item reveal">
+        <img src="clinic-reception.png" alt="Clinic Reception"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-placeholder" style="display:none"><span>🏥</span>Clinic Reception<br><small style="font-weight:400;font-size:.65rem">Replace: clinic-reception.jpg</small></div>
+        <div class="g-label">Clinic Reception</div>
+      </div>
+
+      <!-- PHOTO 2: Replace src with your photo file e.g. treatment-room.jpg -->
+      <div class="gallery-item reveal">
+        <img src="treatment-room.png" alt="Treatment Room"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-placeholder" style="display:none"><span>🪑</span>Treatment Room<br><small style="font-weight:400;font-size:.65rem">Replace: treatment-room.jpg</small></div>
+        <div class="g-label">Treatment Room</div>
+      </div>
+
+      <!-- PHOTO 3: Replace src with your photo file e.g. doctor-treating.jpg -->
+      <div class="gallery-item reveal">
+        <img src="doctor-treating.jpeg" alt="Doctor at Work"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-placeholder" style="display:none"><span>👨‍⚕️</span>Doctor at Work<br><small style="font-weight:400;font-size:.65rem">Replace: doctor-treating.jpg</small></div>
+        <div class="g-label">Doctor at Work</div>
+      </div>
+
+      <!-- PHOTO 4: Replace src with your photo file e.g. dental-equipment.jpg -->
+      <div class="gallery-item reveal">
+        <img src="dental-equipment.png" alt="Modern Equipment"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-placeholder" style="display:none"><span>🔬</span>Modern Equipment<br><small style="font-weight:400;font-size:.65rem">Replace: dental-equipment.jpg</small></div>
+        <div class="g-label">Modern Equipment</div>
+      </div>
+
+      <!-- PHOTO 5: Replace src with your photo file e.g. patient-care.jpg -->
+      <div class="gallery-item reveal">
+        <img src="patient-care.png" alt="Patient Care"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-placeholder" style="display:none"><span>🤝</span>Patient Care<br><small style="font-weight:400;font-size:.65rem">Replace: patient-care.jpg</small></div>
+        <div class="g-label">Patient Care</div>
+      </div>
+
+      <!-- PHOTO 6: Replace src with your photo file e.g. clinic-team.jpg -->
+      <div class="gallery-item reveal">
+        <img src="clinic-team.png" alt="Clinic Team"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="photo-placeholder" style="display:none"><span>👥</span>Clinic Team<br><small style="font-weight:400;font-size:.65rem">Replace: clinic-team.jpg</small></div>
+        <div class="g-label">Clinic Team</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- ABOUT -->
 <section id="about" class="section section--alt">
@@ -388,6 +492,31 @@ p{text-wrap:pretty;max-width:72ch}
   </div>
 </section>
 
+<!-- STATS / CLINIC NUMBERS -->
+<section id="numbers" class="stats-section">
+  <div class="wrap">
+    <div class="stats-header reveal">
+      <p class="sec-label" style="color:#7dd3fc">Clinic Numbers</p>
+      <h2 class="sec-title sec-title--light">Our Track Record Speaks</h2>
+      <p style="color:#94a3b8;max-width:500px;margin:0 auto">Real numbers from over a decade of dedicated dental care in Motihari and East Champaran.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card reveal"><div class="stat-card-ico">📋</div><div class="stat-card-num" data-target="35000">0</div><div class="stat-card-lbl">Total OPD</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">🦷</div><div class="stat-card-num" data-target="5000">0</div><div class="stat-card-lbl">Root Canal (RCT)</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">🔄</div><div class="stat-card-num" data-target="3000">0</div><div class="stat-card-lbl">Re-RCT</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">✂️</div><div class="stat-card-num" data-target="5000">0</div><div class="stat-card-lbl">Extractions</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">😬</div><div class="stat-card-num" data-target="300">0</div><div class="stat-card-lbl">Braces</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">⚕️</div><div class="stat-card-num" data-target="1000">0</div><div class="stat-card-lbl">Surgery (LA+GA)</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">🔩</div><div class="stat-card-num" data-target="200">0</div><div class="stat-card-lbl">Implants</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">✨</div><div class="stat-card-num" data-target="1000">0</div><div class="stat-card-lbl">Cosmetic Correction</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">👶</div><div class="stat-card-num" data-target="500">0</div><div class="stat-card-lbl">Pulpectomy</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">♻️</div><div class="stat-card-num" data-target="100">0</div><div class="stat-card-lbl">Reimplantation</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">🧼</div><div class="stat-card-num" data-target="7000">0</div><div class="stat-card-lbl">Scaling &amp; Root Planing</div></div>
+      <div class="stat-card reveal"><div class="stat-card-ico">🎖️</div><div class="stat-card-num" data-target="10">0</div><div class="stat-card-lbl">Years Experience</div></div>
+    </div>
+  </div>
+</section>
+
 <!-- SERVICES -->
 <section id="services" class="section" style="background:#f8fafc">
   <div class="wrap">
@@ -409,7 +538,7 @@ p{text-wrap:pretty;max-width:72ch}
       <article class="svc-card reveal"><div class="svc-icon">🤰</div><h3>Pregnancy Dental Care</h3><p>Safe and gentle dental treatment for pregnant women with appropriate clinical precautions.</p></article>
       <article class="svc-card reveal"><div class="svc-icon">🩸</div><h3>Gum &amp; Flap Surgery</h3><p>Pyorrhea treatment, bleeding gum care, flap surgery to save teeth and underlying bone.</p></article>
       <article class="svc-card reveal"><div class="svc-icon">💇</div><h3>PRP Hair &amp; Facial</h3><p>Platelet-rich plasma therapy for hair regrowth and skin rejuvenation — effective and safe.</p></article>
-      <article class="svc-card reveal"><div class="svc-icon">🩻</div><h3>Digital X-Ray &amp; A-Ray</h3><p>In-house digital X-ray for accurate diagnosis. A-Ray for complex case assessments.</p></article>
+      <article class="svc-card reveal"><div class="svc-icon">🩻</div><h3>Digital X-Ray</h3><p>In-house digital X-ray for accurate diagnosis and complex case assessments.</p></article>
       <article class="svc-card reveal"><div class="svc-icon">🦴</div><h3>Jaw Fracture Management</h3><p>Expert management of jaw injuries and facial trauma using specialist protocols.</p></article>
       <article class="svc-card reveal"><div class="svc-icon">💎</div><h3>Dental Jewellery &amp; Bleaching</h3><p>Safe tooth jewellery application and professional bleaching for whiter, brighter teeth.</p></article>
       <article class="svc-card reveal"><div class="svc-icon">🚨</div><h3>Emergency Dental Care</h3><p>Walk-in emergency care for pain, swelling, trauma and accidents — no advance booking needed.</p></article>
@@ -417,47 +546,125 @@ p{text-wrap:pretty;max-width:72ch}
   </div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing" class="section section--alt">
+<!-- BEFORE / DURING / AFTER -->
+<section class="bda-section" id="results">
   <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <p class="sec-label">Real Results</p>
+      <h2 class="sec-title">Before, During &amp; After Treatment</h2>
+      <p class="sec-desc" style="margin-inline:auto">Actual treatment outcomes from our patients. Results may vary based on individual case complexity.</p>
+    </div>
+
+    <!-- CASE 1: Smile Makeover -->
+    <div style="margin-bottom:2.5rem">
+      <h3 style="font-size:1rem;font-weight:700;color:#0ea5e9;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.06em;text-align:center">Case 1 — Smile Makeover / Cosmetic Correction</h3>
+      <div class="bda-grid">
+        <div class="bda-card reveal">
+          <div class="bda-img">
+            <!-- PHOTO: Replace src with before-smile-1.jpg -->
+            <img src="before-smile-1.png" alt="Before Smile Makeover"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>📷</span>Before Photo<br><small style="font-weight:400">Replace: before-smile-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--before">Before</span><h4 style="margin-top:.5rem">Stained &amp; Misaligned Teeth</h4><p>Patient presented with severe discolouration and crowding before treatment.</p></div>
+        </div>
+        <div class="bda-card reveal">
+          <div class="bda-img">
+            <!-- PHOTO: Replace src with during-smile-1.jpg -->
+            <img src="during-smile-1.png" alt="During Smile Makeover"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>🦷</span>During Treatment<br><small style="font-weight:400">Replace: during-smile-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">Composite Bonding in Progress</h4><p>Dr. Pradeep applying composite resin to reshape and whiten each tooth.</p></div>
+        </div>
+        <div class="bda-card reveal">
+          <div class="bda-img">
+            <!-- PHOTO: Replace src with after-smile-1.jpg -->
+            <img src="after-smile-1.png" alt="After Smile Makeover"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>😁</span>After Photo<br><small style="font-weight:400">Replace: after-smile-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--after">After</span><h4 style="margin-top:.5rem">Beautiful Natural Smile</h4><p>Complete smile transformation — whiter, aligned, natural-looking result.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE 2: RCT / Crown -->
+    <div style="margin-bottom:2.5rem">
+      <h3 style="font-size:1rem;font-weight:700;color:#0ea5e9;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.06em;text-align:center">Case 2 — Root Canal &amp; Crown</h3>
+      <div class="bda-grid">
+        <div class="bda-card reveal">
+          <div class="bda-img">
+            <img src="before-rct-1.jpg" alt="Before RCT"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>📷</span>Before Photo<br><small style="font-weight:400">Replace: before-rct-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--before">Before</span><h4 style="margin-top:.5rem">Severely Decayed Tooth</h4><p>Deep decay with abscess causing severe pain — tooth was at risk of loss.</p></div>
+        </div>
+        <div class="bda-card reveal">
+          <div class="bda-img">
+            <img src="during-rct-1.jpg" alt="During RCT"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>🦷</span>During Treatment<br><small style="font-weight:400">Replace: during-rct-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">Root Canal in Progress</h4><p>Rotary RCT being performed under local anaesthesia — completely painless.</p></div>
+        </div>
+        <div class="bda-card reveal">
+          <div class="bda-img">
+            <img src="after-rct-1.jpg" alt="After RCT with Crown"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>👑</span>After Photo<br><small style="font-weight:400">Replace: after-rct-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--after">After</span><h4 style="margin-top:.5rem">Tooth Saved with Ceramic Crown</h4><p>Full function restored — tooth saved, pain eliminated, natural appearance.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- X-RAY STRIP -->
     <div class="reveal">
-      <p class="sec-label">Transparent Fees</p>
-      <h2 class="sec-title">Treatments &amp; Fee Guide</h2>
-      <p class="sec-desc">Approximate price ranges to help you plan. Exact fees are quoted after clinical examination and X-ray. No hidden charges.</p>
+      <h3 style="font-size:1rem;font-weight:700;color:#0ea5e9;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.06em;text-align:center">X-Ray &amp; Clinical Images</h3>
+      <div class="xray-strip">
+        <div class="xray-card">
+          <img src="xray-1.jpeg" alt="Dental X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>X-Ray Before<br><small style="font-weight:400;font-size:.62rem">Replace: xray-1.jpg</small></div>
+          <div class="xray-label">Pre-treatment X-Ray</div>
+        </div>
+        <div class="xray-card">
+          <img src="xray-2.png" alt="Post RCT X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>X-Ray After RCT<br><small style="font-weight:400;font-size:.62rem">Replace: xray-2.jpg</small></div>
+          <div class="xray-label">Post-RCT X-Ray</div>
+        </div>
+        <div class="xray-card">
+          <img src="xray-3.png" alt="Implant X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>Implant X-Ray<br><small style="font-weight:400;font-size:.62rem">Replace: xray-3.jpg</small></div>
+          <div class="xray-label">Implant X-Ray</div>
+        </div>
+        <div class="xray-card">
+          <img src="xray-4.png" alt="Full Mouth X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>Full Mouth OPG<br><small style="font-weight:400;font-size:.62rem">Replace: xray-4.jpg</small></div>
+          <div class="xray-label">Full Mouth OPG</div>
+        </div>
+      </div>
     </div>
-    <div class="ptable-wrap reveal">
-      <table class="ptable">
-        <thead><tr><th>Treatment</th><th>Starting From</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Root Canal Treatment (RCT)</strong></td><td class="price">₹3,500 – ₹5,000</td><td>Per tooth, includes X-ray &amp; complete treatment</td></tr>
-          <tr><td><strong>Re-RCT (Retreatment)</strong></td><td class="price">₹3,500+</td><td>Previously treated tooth retreatment</td></tr>
-          <tr><td><strong>Digital X-Ray</strong></td><td class="price">₹300+</td><td>In-house digital dental X-ray</td></tr>
-          <tr><td><strong>A-Ray</strong></td><td class="price">₹3,500+</td><td>Advanced radiograph</td></tr>
-          <tr><td><strong>Tooth Extraction</strong></td><td class="price">₹500+</td><td>Simple extraction per tooth</td></tr>
-          <tr><td><strong>Braces (Full Package)</strong></td><td class="price">₹20,000+</td><td>Complete orthodontic treatment course</td></tr>
-          <tr><td><strong>Cosmetic Correction / Smile Design</strong></td><td class="price">₹6,000+</td><td>Smile designing &amp; composite corrections</td></tr>
-          <tr><td><strong>Dental Implant</strong></td><td class="price">₹20,000+</td><td>Per implant (crown charged separately)</td></tr>
-          <tr><td><strong>Minor Oral Surgery</strong></td><td class="price">₹1,000+</td><td>Cyst removal, minor gum surgeries</td></tr>
-          <tr><td><strong>Re-implantation of Tooth</strong></td><td class="price">₹1,500+</td><td>Re-fixing knocked-out teeth in suitable cases</td></tr>
-          <tr><td><strong>Pulpectomy (Child / Milk Tooth)</strong></td><td class="price">₹500+</td><td>Milk tooth nerve treatment</td></tr>
-          <tr><td><strong>Crown &amp; Bridge</strong></td><td class="price">As per material</td><td>Ceramic, PFM or metal options available</td></tr>
-          <tr><td><strong>Teeth Cleaning / Scaling</strong></td><td class="price">₹500+</td><td>Professional ultrasonic scaling &amp; polishing</td></tr>
-          <tr><td><strong>Dental Check-up</strong></td><td class="price">₹300+</td><td>Consultation, examination &amp; advice</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="price-note reveal">* Prices are indicative. Exact quotation provided after clinical examination. Fees may vary based on case complexity and materials chosen.</p>
+
   </div>
 </section>
 
+
 <!-- DOCTOR -->
-<section id="doctor" class="section" style="background:#f8fafc">
+<section id="doctor" class="section section--alt">
   <div class="wrap">
     <div class="doctor-grid">
       <div class="doc-card reveal">
-        <div class="doc-avatar">
-        <img src="dentist.jpeg" alt="Dr. Pradeep Kumar Jayswal" />
-        </div>
+        <div class="doc-avatar" style="width:120px;height:120px;overflow:hidden;background:#1e3a5f;border:3px solid rgba(255,255,255,.3)">
+        <!-- PHOTO: Replace src with doctor-photo.jpg -->
+        <img src="dentist.jpeg" alt="Dr. Pradeep Kumar Jayswal" style="width:100%;height:100%;object-fit:cover"
+          onerror="this.style.display='none';this.parentElement.innerHTML+='<div style=&quot;font-size:2.5rem;line-height:120px;text-align:center&quot;>👨‍⚕️</div>'"/>
+      </div>
         <h3>Dr. Pradeep Kr. Jayswal</h3>
         <p>Oral &amp; Dental Surgeon</p>
         <p style="margin-top:.5rem;font-size:.75rem;opacity:.75">B.D.S. (PGIMS Rohtak) · MPS Noida · CERT Cosmetic USA · D.Orthodontic · Ex-Senior Consultant, Apex Plus Superspeciality Hospital</p>
@@ -522,10 +729,6 @@ p{text-wrap:pretty;max-width:72ch}
         <div class="faq-body"><p>Implant surgery takes about 1 hour. After 2-3 months of healing (osseointegration), the final crown is placed. Total process takes 3-4 months. Temporary solutions may be available in some cases.</p></div>
       </details>
       <details class="faq-item reveal">
-        <summary>What is the cost of braces in Motihari?</summary>
-        <div class="faq-body"><p>At COSMODENTZ, a full braces (orthodontic) treatment package starts from ₹20,000. The exact amount depends on case complexity, type of braces chosen and duration. A personalised quote is given after an orthodontic consultation.</p></div>
-      </details>
-      <details class="faq-item reveal">
         <summary>At what age should children visit a dentist?</summary>
         <div class="faq-body"><p>The first dental visit should ideally be when the first milk tooth appears (around 6 months). Regular visits every 6 months are recommended from age 2. Early visits help identify decay and habits that affect tooth alignment.</p></div>
       </details>
@@ -535,7 +738,7 @@ p{text-wrap:pretty;max-width:72ch}
       </details>
       <details class="faq-item reveal">
         <summary>What is PRP hair treatment?</summary>
-        <div class="faq-body"><p>Platelet Rich Plasma (PRP) therapy involves drawing a small amount of blood, processing it to concentrate growth factors, and injecting it into the scalp to stimulate hair follicles. 3-4 sessions are recommended, typically 4-6 weeks apart. PRP facials use the same technique for skin rejuvenation.</p></div>
+        <div class="faq-body"><p>Platelet Rich Plasma (PRP) therapy involves drawing a small amount of blood, processing it to concentrate growth factors, and injecting it into the scalp to stimulate hair follicles. 3-4 sessions are recommended, typically 4-6 weeks apart.</p></div>
       </details>
     </div>
   </div>
@@ -593,7 +796,7 @@ p{text-wrap:pretty;max-width:72ch}
           <li class="clist-item"><span class="clist-icon">📞</span><div><strong>Phone</strong><a href="tel:+919473013806">+91 94730 13806</a></div></li>
           <li class="clist-item"><span class="clist-icon">💬</span><div><strong>WhatsApp</strong><a href="https://wa.me/919311545841" target="_blank" rel="noopener">+91 93115 45841</a></div></li>
           <li class="clist-item"><span class="clist-icon">📍</span><div><strong>Address</strong>NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony, Motihari, Bihar 845401</div></li>
-          <li class="clist-item"><span class="clist-icon">🕐</span><div><strong>Timings</strong>Mon–Sat: 9:30 AM – 8:00 PM<br>Sunday: Closed</div></li>
+          <li class="clist-item"><span class="clist-icon">🕐</span><div><strong>Timings</strong>Mon–Sat: 9:30 AM – 8:00 PM<br>Sunday: 10:00 AM – 4:00 PM</div></li>
         </ul>
         <div class="contact-btns">
           <a href="tel:+919473013806" class="btn btn--primary">📞 Call Now</a>
@@ -604,7 +807,7 @@ p{text-wrap:pretty;max-width:72ch}
   </div>
 </section>
 
-<!-- CONTACT & MAP -->
+<!-- MAP -->
 <section id="contact" class="section section--alt">
   <div class="wrap">
     <div class="reveal">
@@ -618,7 +821,7 @@ p{text-wrap:pretty;max-width:72ch}
           <li>📍 NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony, Motihari, Bihar 845401</li>
           <li>📞 <a href="tel:+919473013806">+91 94730 13806</a></li>
           <li>💬 <a href="https://wa.me/919311545841" target="_blank" rel="noopener">+91 93115 45841 (WhatsApp)</a></li>
-          <li>🕐 Mon–Sat: 9:30 AM – 8:00 PM · Sunday: Closed</li>
+          <li>🕐 Mon–Sat: 9:30 AM – 8:00 PM · Sunday: 10:00 AM – 4:00 PM</li>
         </ul>
         <a href="https://www.google.com/maps/search/?api=1&query=COSMODENTZ+Dental+Clinic+NH+28+Motihari" target="_blank" rel="noopener" class="btn btn--primary">🗺️ Open in Google Maps</a>
       </div>
@@ -647,10 +850,10 @@ p{text-wrap:pretty;max-width:72ch}
     </div>
     <div class="footer-col">
       <h4>Quick Links</h4>
-      <nav aria-label="Footer nav">
+      <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#pricing">Fees</a>
+        <a href="#numbers">Clinic Numbers</a>
         <a href="#doctor">Doctor</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
@@ -660,7 +863,7 @@ p{text-wrap:pretty;max-width:72ch}
     </div>
     <div class="footer-col">
       <h4>Key Treatments</h4>
-      <nav aria-label="Treatments nav">
+      <nav>
         <a href="#services">Root Canal (RCT)</a>
         <a href="#services">Dental Implants</a>
         <a href="#services">Braces / Orthodontics</a>
@@ -678,7 +881,6 @@ p{text-wrap:pretty;max-width:72ch}
 </footer>
 
 <script>
-// Year
 document.getElementById("yr").textContent = new Date().getFullYear();
 
 // Hamburger
@@ -695,43 +897,64 @@ nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
   hbg.setAttribute("aria-expanded", "false");
 }));
 
-// Sticky header shadow
-const header = document.querySelector(".site-header");
-window.addEventListener("scroll", () => {
-  header.style.boxShadow = window.scrollY > 10 ? "0 2px 24px rgba(0,0,0,.35)" : "none";
-}, { passive: true });
-
 // Scroll reveal
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); observer.unobserve(e.target); } });
-}, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add("visible"); observer.unobserve(e.target); }});
+}, {threshold:0.1, rootMargin:"0px 0px -40px 0px"});
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
-// Counter animation
-function animateCounter(el, target) {
-  const dur = 1800, step = 16;
-  let current = 0;
-  const increment = target / (dur / step);
-  const timer = setInterval(() => {
-    current = Math.min(current + increment, target);
-    el.textContent = (current >= 1000 ? Math.round(current / 100) * 100 : Math.round(current)) + (target >= 1000 ? "+" : "+");
-    if (current >= target) clearInterval(timer);
-  }, step);
+// Hero mini counters
+function countUp(el, target, suffix){
+  const duration = 1200;
+  const startTime = performance.now();
+  function frame(now){
+    const p = Math.min((now - startTime) / duration, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    const cur = Math.round(ease * target);
+    el.textContent = (cur >= 1000 ? Math.round(cur/1000)+"K" : cur) + suffix;
+    if(p < 1) requestAnimationFrame(frame);
+    else el.textContent = (target >= 1000 ? Math.round(target/1000)+"K" : target) + suffix;
+  }
+  requestAnimationFrame(frame);
 }
-const counterObserver = new IntersectionObserver(entries => {
+const heroObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    if (e.isIntersecting) {
-      animateCounter(document.getElementById("c1"), 1000);
-      animateCounter(document.getElementById("c2"), 119);
-      counterObserver.disconnect();
+    if(e.isIntersecting){
+      countUp(document.getElementById("c1"), 35000, "+");
+      countUp(document.getElementById("c2"), 119, "+");
+      heroObs.disconnect();
     }
   });
 });
-const heroSection = document.getElementById("hero");
-if (heroSection) counterObserver.observe(heroSection);
+heroObs.observe(document.getElementById("hero"));
 
-// Appointment WhatsApp form
-document.getElementById("apptForm").addEventListener("submit", function(e) {
+// Stats section animated counters
+const statsObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      document.querySelectorAll(".stat-card-num").forEach(el => {
+        const target = +el.dataset.target;
+        const duration = 1200;
+        const startTime = performance.now();
+        function frame(now){
+          const p = Math.min((now - startTime) / duration, 1);
+          const ease = 1 - Math.pow(1 - p, 3);
+          const cur = Math.round(ease * target);
+          el.textContent = cur.toLocaleString("en-IN") + "+";
+          if(p < 1) requestAnimationFrame(frame);
+          else el.textContent = target.toLocaleString("en-IN") + "+";
+        }
+        requestAnimationFrame(frame);
+      });
+      statsObs.disconnect();
+    }
+  });
+}, {threshold:0.2});
+const statsSection = document.getElementById("numbers");
+if(statsSection) statsObs.observe(statsSection);
+
+// WhatsApp form
+document.getElementById("apptForm").addEventListener("submit", function(e){
   e.preventDefault();
   const name = this.name.value.trim();
   const phone = this.phone.value.trim();
@@ -740,27 +963,19 @@ document.getElementById("apptForm").addEventListener("submit", function(e) {
   let valid = true;
   document.getElementById("err-name").textContent = "";
   document.getElementById("err-phone").textContent = "";
-  if (!name) { document.getElementById("err-name").textContent = "Please enter your name."; valid = false; }
-  if (!phone) { document.getElementById("err-phone").textContent = "Please enter your phone number."; valid = false; }
-  if (!valid) return;
+  if(!name){ document.getElementById("err-name").textContent = "Please enter your name."; valid = false; }
+  if(!phone){ document.getElementById("err-phone").textContent = "Please enter your phone number."; valid = false; }
+  if(!valid) return;
   const text = encodeURIComponent(
-    "New Appointment Request - COSMODENTZ\n" +
-    "Name: " + name + "\n" +
-    "Phone: " + phone + "\n" +
-    "Treatment: " + (treatment || "Not specified") + "\n" +
-    "Message: " + (message || "No message")
+    "New Appointment - COSMODENTZ\nName: "+name+"\nPhone: "+phone+"\nTreatment: "+(treatment||"Not specified")+"\nMessage: "+(message||"None")
   );
-  window.open("https://wa.me/919311545841?text=" + text, "_blank");
+  window.open("https://wa.me/919311545841?text="+text, "_blank");
 });
 
-// FAQ close others
+// FAQ accordion
 document.querySelectorAll(".faq-item").forEach(item => {
   item.addEventListener("toggle", () => {
-    if (item.open) {
-      document.querySelectorAll(".faq-item").forEach(other => {
-        if (other !== item) other.removeAttribute("open");
-      });
-    }
+    if(item.open) document.querySelectorAll(".faq-item").forEach(o => { if(o !== item) o.removeAttribute("open"); });
   });
 });
 </script>
