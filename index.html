@@ -70,7 +70,7 @@ p{text-wrap:pretty;max-width:72ch}
 .fab--call{background:var(--blue)}
 .fab--book{background:#6366f1}
 
-.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:50;background:rgba(15,23,42,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#e2e8f0;height:var(--nav-h)}
+.site-header{position:fixed;top:0;left:0;right:0;width:100%;z-index:300;background:rgba(15,23,42,.94);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);color:#e2e8f0;height:var(--nav-h)}
 .nav-wrap{display:flex;align-items:center;justify-content:space-between;height:100%;gap:1rem}
 .brand{display:flex;align-items:center;gap:.55rem}
 .brand-name{font-weight:800;font-size:1rem;line-height:1.1}
@@ -80,13 +80,30 @@ p{text-wrap:pretty;max-width:72ch}
 .nav a:hover{opacity:1}
 .nav-cta{background:var(--grad);color:#fff!important;opacity:1!important;padding:.4rem 1.1rem;border-radius:999px;font-weight:700}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:.3rem}
+.hamburger{
+  position: relative;
+  z-index: 200;
+}
 .hamburger span{display:block;width:22px;height:2px;background:#e2e8f0;border-radius:2px;transition:all .25s}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 @media(max-width:860px){
-  .nav{position:fixed;inset:var(--nav-h) 0 auto 0;background:#0f172a;flex-direction:column;padding:1.5rem;gap:1rem;transform:translateY(-110%);transition:transform .3s ease;pointer-events:none}
-  .nav.open{transform:translateY(0);pointer-events:auto}
+.nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background:#0f172a;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:1.5rem;
+  transform:translateY(-100%);
+  transition:transform .3s ease;
+  z-index:100;
+}  .nav.open{transform:translateY(0);pointer-events:auto}
   .hamburger{display:flex}
 }
 
@@ -370,7 +387,7 @@ p{text-wrap:pretty;max-width:72ch}
       </div>
       <div class="hours-bar">
         <div class="dot"></div>
-        <span><strong>Mon–Sat:</strong> 9:30 AM – 8:00 PM &nbsp;|&nbsp; <strong>Sun:</strong> Closed</span>
+        <span><strong>Mon–Sat:</strong> 9:30 AM – 8:00 PM &nbsp;|&nbsp; <strong>Sun:</strong> 10:00 AM – 02:00 PM</span>
       </div>
     </div>
   </div>
@@ -566,7 +583,7 @@ p{text-wrap:pretty;max-width:72ch}
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="bda-placeholder" style="display:none"><span>📷</span>Before Photo<br><small style="font-weight:400">Replace: before-smile-1.jpg</small></div>
           </div>
-          <div class="bda-info"><span class="bda-badge bda-badge--before">Before</span><h4 style="margin-top:.5rem">Stained &amp; Misaligned Teeth</h4><p>Patient presented with severe discolouration and crowding before treatment.</p></div>
+          <div class="bda-info"><span class="bda-badge bda-badge--before">Before</span><h4 style="margin-top:.5rem">Stained &amp; Misaligned Teeth</h4><p>Patient presented with pronounced dental crowding and uneven spacing before treatment.</p></div>
         </div>
         <div class="bda-card reveal">
           <div class="bda-img">
@@ -575,7 +592,7 @@ p{text-wrap:pretty;max-width:72ch}
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="bda-placeholder" style="display:none"><span>🦷</span>During Treatment<br><small style="font-weight:400">Replace: during-smile-1.jpg</small></div>
           </div>
-          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">Composite Bonding in Progress</h4><p>Dr. Pradeep applying composite resin to reshape and whiten each tooth.</p></div>
+          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">Composite Bonding in Progress</h4><p>Dr. Pradeep applying composite resin, Active progress stage with precise braces adjustment.</p></div>
         </div>
         <div class="bda-card reveal">
           <div class="bda-img">
@@ -584,38 +601,62 @@ p{text-wrap:pretty;max-width:72ch}
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="bda-placeholder" style="display:none"><span>😁</span>After Photo<br><small style="font-weight:400">Replace: after-smile-1.jpg</small></div>
           </div>
-          <div class="bda-info"><span class="bda-badge bda-badge--after">After</span><h4 style="margin-top:.5rem">Beautiful Natural Smile</h4><p>Complete smile transformation — whiter, aligned, natural-looking result.</p></div>
+          <div class="bda-info"><span class="bda-badge bda-badge--after">After</span><h4 style="margin-top:.5rem">Beautiful Natural Smile</h4><p>The final result: a straight, healthy, and beautifully aligned smile.</p></div>
         </div>
       </div>
     </div>
 
     <!-- CASE 2: RCT / Crown -->
     <div style="margin-bottom:2.5rem">
-      <h3 style="font-size:1rem;font-weight:700;color:#0ea5e9;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.06em;text-align:center">Case 2 — Root Canal &amp; Crown</h3>
+      <h3 style="font-size:1rem;font-weight:700;color:#0ea5e9;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.06em;text-align:center">Case 2 — Root Canal Treatments</h3>
       <div class="bda-grid">
         <div class="bda-card reveal">
-          <div class="bda-img">
-            <img src="before-rct-1.jpg" alt="Before RCT"
+          <div class="bda-badge--before">
+            <img src="rct-1.jpeg" alt="Before RCT"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="bda-placeholder" style="display:none"><span>📷</span>Before Photo<br><small style="font-weight:400">Replace: before-rct-1.jpg</small></div>
           </div>
-          <div class="bda-info"><span class="bda-badge bda-badge--before">Before</span><h4 style="margin-top:.5rem">Severely Decayed Tooth</h4><p>Deep decay with abscess causing severe pain — tooth was at risk of loss.</p></div>
+          <div class="bda-info"><span class="bda-badge bda-badge--before">Before</span><h4 style="margin-top:.5rem">Severely Decayed Tooth</h4><p>Large periapical lesion approx 21 mm are frequently treated without surgery( using conservative roots canal therapy @ RCT)</p></div>
         </div>
         <div class="bda-card reveal">
-          <div class="bda-img">
-            <img src="during-rct-1.jpg" alt="During RCT"
+          <div class="bda-badge--during">
+            <img src="rct-2.jpeg" alt="During RCT"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="bda-placeholder" style="display:none"><span>🦷</span>During Treatment<br><small style="font-weight:400">Replace: during-rct-1.jpg</small></div>
           </div>
-          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">Root Canal in Progress</h4><p>Rotary RCT being performed under local anaesthesia — completely painless.</p></div>
+          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">Intercanal medication.</h4><p>Large periapical lesion approx 21 mm are frequently treated without surgery( using conservative roots canal therapy @ RCT)</p></div>
         </div>
         <div class="bda-card reveal">
-          <div class="bda-img">
-            <img src="after-rct-1.jpg" alt="After RCT with Crown"
+          <div class="bda-badge--during">
+            <img src="rct-3.jpeg" alt="During RCT"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>🦷</span>During Treatment<br><small style="font-weight:400">Replace: during-rct-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">After 3 months.</h4><p>Large periapical lesion approx 21 mm are frequently treated without surgery( using conservative roots canal therapy @ RCT)</p></div>
+        </div>
+        <div class="bda-card reveal">
+          <div class="bda-badge--during">
+            <img src="rct-4.jpeg" alt="During RCT"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>🦷</span>During Treatment<br><small style="font-weight:400">Replace: during-rct-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">After 7 months.</h4><p>Large periapical lesion approx 21 mm are frequently treated without surgery( using conservative roots canal therapy @ RCT)</p></div>
+        </div>
+        <div class="bda-card reveal">
+          <div class="bda-badge--during">
+            <img src="rct-5.jpeg" alt="During RCT"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+            <div class="bda-placeholder" style="display:none"><span>🦷</span>During Treatment<br><small style="font-weight:400">Replace: during-rct-1.jpg</small></div>
+          </div>
+          <div class="bda-info"><span class="bda-badge bda-badge--during">During</span><h4 style="margin-top:.5rem">Obturation done in 8 months.</h4><p>Large periapical lesion approx 21 mm are frequently treated without surgery( using conservative roots canal therapy @ RCT)</p></div>
+        </div>
+        <div class="bda-card reveal">
+          <div class="bda-badge--after">
+            <img src="rct-6.jpeg" alt="After RCT with Crown"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
             <div class="bda-placeholder" style="display:none"><span>👑</span>After Photo<br><small style="font-weight:400">Replace: after-rct-1.jpg</small></div>
           </div>
-          <div class="bda-info"><span class="bda-badge bda-badge--after">After</span><h4 style="margin-top:.5rem">Tooth Saved with Ceramic Crown</h4><p>Full function restored — tooth saved, pain eliminated, natural appearance.</p></div>
+          <div class="bda-info"><span class="bda-badge bda-badge--after">After</span><h4 style="margin-top:.5rem">9 month x-ray.</h4><p>Full function restored — tooth saved, pain eliminated, natural appearance.</p></div>
         </div>
       </div>
     </div>
@@ -639,14 +680,38 @@ p{text-wrap:pretty;max-width:72ch}
         <div class="xray-card">
           <img src="xray-3.png" alt="Implant X-Ray"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>Open Reduction and Internal Fixation (ORIF)<br><small style="font-weight:400;font-size:.62rem">Replace: xray-3.jpg</small></div>
+          <div class="xray-label">Open Reduction and Internal Fixation (ORIF)</div>
+        </div>
+        <div class="xray-card">
+          <img src="xray-4.png" alt="Implant X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
           <div class="xray-placeholder" style="display:none"><span>🩻</span>Implant X-Ray<br><small style="font-weight:400;font-size:.62rem">Replace: xray-3.jpg</small></div>
           <div class="xray-label">Implant X-Ray</div>
         </div>
         <div class="xray-card">
-          <img src="xray-4.png" alt="Full Mouth X-Ray"
+          <img src="Apical puff.jpeg" alt="Full Mouth X-Ray"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-          <div class="xray-placeholder" style="display:none"><span>🩻</span>Full Mouth OPG<br><small style="font-weight:400;font-size:.62rem">Replace: xray-4.jpg</small></div>
-          <div class="xray-label">Full Mouth OPG</div>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>Apical puff<br><small style="font-weight:400;font-size:.62rem">Replace: xray-4.jpg</small></div>
+          <div class="xray-label">Apical puff</div>
+        </div>
+        <div class="xray-card">
+          <img src="Jow fracture Imf.jpeg" alt="Full Mouth X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>Jow fracture Imf<br><small style="font-weight:400;font-size:.62rem">Replace: xray-4.jpg</small></div>
+          <div class="xray-label">Jow fracture Imf</div>
+        </div>
+        <div class="xray-card">
+          <img src="Maxillomandibular Fixation (MMF).png" alt="Full Mouth X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>Maxillomandibular Fixation (MMF)<br><small style="font-weight:400;font-size:.62rem">Replace: xray-4.jpg</small></div>
+          <div class="xray-label">Maxillomandibular Fixation (MMF)</div>
+        </div>
+        <div class="xray-card">
+          <img src="Elastic Maxillomandibular Fixation (MMF).png" alt="Full Mouth X-Ray"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="xray-placeholder" style="display:none"><span>🩻</span>Elastic Maxillomandibular Fixation (Jaw Fixation with Elastics)<br><small style="font-weight:400;font-size:.62rem">Replace: xray-4.jpg</small></div>
+          <div class="xray-label">Elastic Maxillomandibular Fixation (Jaw Fixation with Elastics)</div>
         </div>
       </div>
     </div>
@@ -796,7 +861,7 @@ p{text-wrap:pretty;max-width:72ch}
           <li class="clist-item"><span class="clist-icon">📞</span><div><strong>Phone</strong><a href="tel:+919473013806">+91 94730 13806</a></div></li>
           <li class="clist-item"><span class="clist-icon">💬</span><div><strong>WhatsApp</strong><a href="https://wa.me/919311545841" target="_blank" rel="noopener">+91 93115 45841</a></div></li>
           <li class="clist-item"><span class="clist-icon">📍</span><div><strong>Address</strong>NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony, Motihari, Bihar 845401</div></li>
-          <li class="clist-item"><span class="clist-icon">🕐</span><div><strong>Timings</strong>Mon–Sat: 9:30 AM – 8:00 PM<br>Sunday: 10:00 AM – 4:00 PM</div></li>
+          <li class="clist-item"><span class="clist-icon">🕐</span><div><strong>Timings</strong>Mon–Sat: 9:30 AM – 8:00 PM<br>Sunday: 10:00 AM – 02:00 PM</div></li>
         </ul>
         <div class="contact-btns">
           <a href="tel:+919473013806" class="btn btn--primary">📞 Call Now</a>
@@ -821,7 +886,7 @@ p{text-wrap:pretty;max-width:72ch}
           <li>📍 NH 28, Chhatauni Thana Rd, opp. Jaiswal Hotel, Refugee Colony, Motihari, Bihar 845401</li>
           <li>📞 <a href="tel:+919473013806">+91 94730 13806</a></li>
           <li>💬 <a href="https://wa.me/919311545841" target="_blank" rel="noopener">+91 93115 45841 (WhatsApp)</a></li>
-          <li>🕐 Mon–Sat: 9:30 AM – 8:00 PM · Sunday: 10:00 AM – 4:00 PM</li>
+          <li>🕐 Mon–Sat: 9:30 AM – 8:00 PM · Sunday: 10:00 AM – 02:00 PM</li>
         </ul>
         <a href="https://www.google.com/maps/search/?api=1&query=COSMODENTZ+Dental+Clinic+NH+28+Motihari" target="_blank" rel="noopener" class="btn btn--primary">🗺️ Open in Google Maps</a>
       </div>
